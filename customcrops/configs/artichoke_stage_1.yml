@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  artichoke_seeds:
+    enabled: true
+    display_name: "Artichoke Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow artichokes."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/artichoke/seeds # Link to ItemsAdder/contents/textures/item/artichoke/{filename}.png
+
+  artichoke_stage_1:
+    enabled: true
+    display_name: artichoke_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/artichoke/stage_1 # Link to ItemsAdder/contents/textures/item/artichoke/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  artichoke_stage_2:
+    enabled: true
+    display_name: artichoke_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/artichoke/stage_2 # Link to ItemsAdder/contents/textures/item/artichoke/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  artichoke_stage_3:
+    enabled: true
+    display_name: artichoke_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/artichoke/stage_3 # Link to ItemsAdder/contents/textures/item/artichoke/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  artichoke_stage_4:
+    enabled: true
+    display_name: artichoke_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/artichoke/stage_4 # Link to ItemsAdder/contents/textures/item/artichoke/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

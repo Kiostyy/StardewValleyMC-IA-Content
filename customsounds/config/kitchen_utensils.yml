@@ -1,0 +1,28 @@
+info:
+  namespace: customsounds
+minecraft_lang_overwrite:
+  my_lang_overwrite:
+    entries:
+      sound.knife: "Knife Sound"
+      sound.grinder: "Grinder Sound"
+      sound.cooking_pot: "Cooking Pot Sound"
+      sound.frying_pan: "Frying Pan Sound"
+    languages:
+    - ALL
+sounds:
+  knife:
+    path: knife
+    settings:
+      subtitle: sound.knife
+  grinder:
+    path: grinder
+    settings:
+      subtitle: sound.grinder
+  cooking_pot:
+    path: cooking_pot
+    settings:
+      subtitle: sound.cooking_pot
+  frying_pan:
+    path: frying_pan
+    settings:
+      subtitle: sound.frying_pan

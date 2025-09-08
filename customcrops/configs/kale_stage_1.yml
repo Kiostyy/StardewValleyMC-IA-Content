@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  kale_seeds:
+    enabled: true
+    display_name: "Kale Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow kale."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/kale/seeds # Link to ItemsAdder/contents/textures/item/kale/{filename}.png
+
+  kale_stage_1:
+    enabled: true
+    display_name: kale_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/kale/stage_1 # Link to ItemsAdder/contents/textures/item/kale/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  kale_stage_2:
+    enabled: true
+    display_name: kale_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/kale/stage_2 # Link to ItemsAdder/contents/textures/item/kale/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  kale_stage_3:
+    enabled: true
+    display_name: kale_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/kale/stage_3 # Link to ItemsAdder/contents/textures/item/kale/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  kale_stage_4:
+    enabled: true
+    display_name: kale_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/kale/stage_4 # Link to ItemsAdder/contents/textures/item/kale/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

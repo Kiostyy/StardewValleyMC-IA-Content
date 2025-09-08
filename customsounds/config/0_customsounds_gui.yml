@@ -1,0 +1,9 @@
+info:
+  namespace: customsounds
+categories:
+  customfoods:
+    enabled: true
+    icon: "BARRIER"
+    name: "Custom Sounds"
+    items:
+      - "customsounds:*"

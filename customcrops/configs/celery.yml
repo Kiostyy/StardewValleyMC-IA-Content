@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  celery:
+    enabled: true
+    display_name: Celery
+    lore:
+      - "&7&oA crunchy vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/celery/celery # Link to ItemsAdder/contents/textures/item/celery/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

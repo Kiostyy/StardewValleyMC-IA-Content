@@ -1,0 +1,9 @@
+info:
+  namespace: customcrops
+categories:
+  customcrops:
+    enabled: true
+    icon: "customcrops:corn"
+    name: "CustomCrops"
+    items:
+      - "customcrops:*"

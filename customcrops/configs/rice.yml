@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  rice:
+    enabled: true
+    display_name: Rice
+    lore:
+      - "&7&oA staple food grain."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/rice/rice # Link to ItemsAdder/contents/textures/item/rice/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

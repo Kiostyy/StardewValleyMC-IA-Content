@@ -1,0 +1,32 @@
+info:
+  namespace: customfoods
+items:
+  croissant:
+    enabled: true
+    name: "Croissant"
+    lore:
+      - "&7&oA long, thin strip of pasta."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/croissant
+    consumable:
+      nutrition: 5
+      saturation: 5
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    croissant_recipe:
+      enabled: true
+      pattern:
+        - XAX
+        - AXA
+        - XXX
+      ingredients:
+        A: customfoods:dough
+      result:
+        item: customfoods:croissant
+        amount: 1

@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  soybean_seeds:
+    enabled: true
+    display_name: "Soybean Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow soybeans."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/soybean/seeds # Link to ItemsAdder/contents/textures/item/soybean/{filename}.png
+
+  soybean_stage_1:
+    enabled: true
+    display_name: soybean_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/soybean/stage_1 # Link to ItemsAdder/contents/textures/item/soybean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  soybean_stage_2:
+    enabled: true
+    display_name: soybean_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/soybean/stage_2 # Link to ItemsAdder/contents/textures/item/soybean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  soybean_stage_3:
+    enabled: true
+    display_name: soybean_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/soybean/stage_3 # Link to ItemsAdder/contents/textures/item/soybean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  soybean_stage_4:
+    enabled: true
+    display_name: soybean_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/soybean/stage_4 # Link to ItemsAdder/contents/textures/item/soybean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

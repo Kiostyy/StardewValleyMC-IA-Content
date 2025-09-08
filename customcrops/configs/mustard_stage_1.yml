@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  mustard_seeds:
+    enabled: true
+    display_name: "Mustard Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow mustard."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/mustard/seeds # Link to ItemsAdder/contents/textures/item/mustard/{filename}.png
+
+  mustard_stage_1:
+    enabled: true
+    display_name: mustard_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/mustard/stage_1 # Link to ItemsAdder/contents/textures/item/mustard/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  mustard_stage_2:
+    enabled: true
+    display_name: mustard_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/mustard/stage_2 # Link to ItemsAdder/contents/textures/item/mustard/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  mustard_stage_3:
+    enabled: true
+    display_name: mustard_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/mustard/stage_3 # Link to ItemsAdder/contents/textures/item/mustard/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  mustard_stage_4:
+    enabled: true
+    display_name: mustard_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/mustard/stage_4 # Link to ItemsAdder/contents/textures/item/mustard/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

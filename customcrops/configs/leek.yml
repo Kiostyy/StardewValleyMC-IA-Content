@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  leek:
+    enabled: true
+    display_name: Leek
+    lore:
+      - "&7&oA delicious vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/leek/leek # Link to ItemsAdder/contents/textures/item/leek/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

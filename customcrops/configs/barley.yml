@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  barley:
+    enabled: true
+    display_name: Barley
+    lore:
+      - "&7&oA staple crop used in various recipes."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/barley/barley # Link to ItemsAdder/contents/textures/item/barley/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

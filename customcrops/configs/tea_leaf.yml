@@ -1,0 +1,17 @@
+info:
+  namespace: customcrops
+items:
+  tea_leaf:
+    enabled: true
+    display_name: Tea Leaf
+    lore:
+      - "&7&oA fragrant leaf used to brew tea."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/tea_leaf/tea_leaf # Link to ItemsAdder/contents/textures/item/tea_leaf/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1
+      can_always_eat: true

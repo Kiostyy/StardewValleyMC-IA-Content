@@ -1,0 +1,17 @@
+info:
+  namespace: customcrops
+items:
+  artichoke:
+    enabled: true
+    display_name: Artichoke
+    lore:
+      - "&7&oA delicious vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/artichoke/artichoke # Link to ItemsAdder/contents/textures/item/artichoke/artichoke.png
+    consumable:
+      nutrition: 1
+      saturation: 1
+      can_always_eat: true

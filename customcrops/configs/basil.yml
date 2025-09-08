@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  basil:
+    enabled: true
+    display_name: Basil
+    lore:
+      - "&7&oA fragrant herb used in cooking."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/basil/basil # Link to ItemsAdder/contents/textures/item/basil/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

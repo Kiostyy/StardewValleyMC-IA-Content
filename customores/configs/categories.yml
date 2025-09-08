@@ -1,0 +1,10 @@
+info:
+  namespace: customores
+categories:
+  customores: 
+    enabled: true
+    icon: "customores:amber_block"
+    name: 'Custom Ores'
+    items:
+     - "customores:*"
+     

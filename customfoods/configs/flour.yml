@@ -1,0 +1,32 @@
+info:
+  namespace: customfoods
+items:
+  flour:
+    enabled: true
+    name: Flour
+    lore:
+      - "&7&oA fine powder made from grinding wheat."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/flour
+    consumable:
+      nutrition: 4
+      saturation: 4
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  cooking:
+    flour:
+      ingredient:
+        item: HAY_BLOCK
+      machines:
+        - FURNACE
+        - SMOKER
+      exp: 6
+      cook_time: 900
+      result:
+        item: customfoods:flour
+        amount: 3

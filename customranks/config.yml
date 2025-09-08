@@ -1,0 +1,52 @@
+info:
+  namespace: customranks
+font_images:
+  default: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/default.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  helper: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/helper.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  builder: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/builder.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  vip: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/vip.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  vipplus: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/vipplus.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  mod: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/mod.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  admin: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/admin.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value

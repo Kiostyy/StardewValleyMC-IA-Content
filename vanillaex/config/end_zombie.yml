@@ -1,0 +1,17 @@
+info:
+  namespace: vanillaex
+entities:
+  end_zombie:
+    model_folder: entity/end_zombie
+    type: ZOMBIE
+    can_sun_burn: false
+entities_populators:
+  end_zombie_end:
+    entity: vanillaex:end_zombie
+    chance: 4
+    biomes:
+    - THE_END
+    spawn_logic:
+      method: REPLACE
+      types:
+      - ENDERMAN

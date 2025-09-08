@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  chili_seeds:
+    enabled: true
+    display_name: "Chili Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow chili."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/chili/seeds # Link to ItemsAdder/contents/textures/item/chili/{filename}.png
+
+  chili_stage_1:
+    enabled: true
+    display_name: chili_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/chili/stage_1 # Link to ItemsAdder/contents/textures/item/chili/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  chili_stage_2:
+    enabled: true
+    display_name: chili_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/chili/stage_2 # Link to ItemsAdder/contents/textures/item/chili/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  chili_stage_3:
+    enabled: true
+    display_name: chili_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/chili/stage_3 # Link to ItemsAdder/contents/textures/item/chili/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  chili_stage_4:
+    enabled: true
+    display_name: chili_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/chili/stage_4 # Link to ItemsAdder/contents/textures/item/chili/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

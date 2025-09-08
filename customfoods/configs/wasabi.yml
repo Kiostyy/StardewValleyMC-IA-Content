@@ -1,0 +1,29 @@
+info:
+  namespace: customfoods
+items:
+  wasabi:
+    enabled: true
+    display_name: Wasabi
+    lore:
+      - "&7&oA spicy green condiment"
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/wasabi
+    consumable:
+      nutrition: 1
+      saturation: 1
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    wasabi:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: customcrops:artichoke
+      result:
+        item: customfoods:wasabi
+        amount: 3

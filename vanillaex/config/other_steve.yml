@@ -1,0 +1,83 @@
+info:
+  namespace: vanillaex
+entities_populators:
+  other_steve:
+    entity: vanillaex:other_steve
+    chance: 3
+    spawn_logic:
+      method: REPLACE
+      types:
+      - ZOMBIE
+      - ENDERMAN
+      - SKELETON
+    light_level:
+      min: 0
+      max: 7
+    time:
+      interval_1:
+        min: 12000 # sunset. also supports the 'sunset' word directly
+        max: 23000 # sunrise. also supports the 'sunrise' word directly
+    location_range:
+      y:
+        max: 10
+entities:
+  other_steve:
+    model_folder: entity/other_steve
+    type: ENDERMAN
+    can_sun_burn: false
+    sounds:
+      ambient:
+        sound: vanillaex:entity.other_steve.ambient
+        chance_per_tick: 0.1
+        cooldown_ticks: 80
+      step: vanillaex:entity.other_steve.step
+      hurt: vanillaex:entity.other_steve.hurt
+      attack: vanillaex:entity.other_steve.attack
+      death: vanillaex:entity.other_steve.death
+    animations:
+      sneak_walk: sneak_walk
+      idle_angry: idle_angry
+      walk_angry: walk_angry
+sounds:
+  "entity.other_steve.ambient":
+    variant_1:
+      path: entity/other_steve/ambient1
+      pitch: 1
+    variant_2:
+      path: entity/other_steve/ambient1
+      pitch: 1.1
+    variant_3:
+      path: entity/other_steve/ambient1
+      pitch: 0.9
+
+    variant_4:
+      path: entity/other_steve/ambient2
+      pitch: 1
+    variant_5:
+      path: entity/other_steve/ambient2
+      pitch: 1.1
+    variant_6:
+      path: entity/other_steve/ambient2
+      pitch: 0.9
+
+    variant_7:
+      path: entity/other_steve/ambient3
+      pitch: 1
+    variant_8:
+      path: entity/other_steve/ambient3
+      pitch: 1.1
+    variant_9:
+      path: entity/other_steve/ambient3
+      pitch: 0.9
+  "entity.other_steve.hurt":
+    variant_1:
+      path: entity/other_steve/hurt
+      pitch: 1
+    variant_2:
+      path: entity/other_steve/hurt
+      pitch: 1.1
+    variant_3:
+      path: entity/other_steve/hurt
+      pitch: 0.9
+  "entity.other_steve.step_angry":
+    path: entity/other_steve/step_angry

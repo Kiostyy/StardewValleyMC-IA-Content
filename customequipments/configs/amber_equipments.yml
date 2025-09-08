@@ -1,0 +1,272 @@
+info:
+  namespace: customequipments
+items:
+# Regular Amber and Amber Bone staff item properties
+  amber_staff:
+    display_name: "Amber Staff"
+    lore: 
+      - "&6&eᴘᴏᴡᴇʀꜱ:"
+      - "  &#FF8C00• &9ꜱᴘᴇᴇᴅ ʙᴏᴏꜱᴛ &7ᴡʜɪʟᴇ ʜᴏʟᴅɪɴɢ"
+      - "  &#FF8C00• &fʟᴇꜰᴛ ᴄʟɪᴄᴋ &n&lᴛᴡɪᴄᴇ&7 ᴛᴏ ꜱʜᴏᴏᴛ ᴀ &6ꜰɪʀᴇʙᴀʟʟ"
+      - "  &#FF8C00• &fʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ &cʜᴇᴀʟ"
+      - " "
+      - "3 ꜱᴇᴄᴏɴᴅ ᴄᴏᴏʟᴅᴏᴡɴ"
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - customequipments:item/amber_staff.png
+    durability:
+      durability: 512
+      max_durability: 512
+      disappear_when_broken: true
+    attribute_modifiers:
+      mainhand:
+        movementSpeed: 0.03
+    blocked_enchants:
+    - ALL
+    item_flags:
+    - HIDE_ENCHANTS
+    events_settings:
+      cooldown: # Cooldown Indicator
+        indicator: HUD
+        ticks: 60 # 3 Sec
+    events:
+      interact:
+        right:
+          play_particle:
+            name: HEART
+          potion_effect:
+            type: REGENERATION
+            duration: 60
+            amplifier: 2
+            particle: HEART
+          decrement_durability:
+            amount: 20
+          play_sound:
+            name: minecraft:entity.witch.drink
+            volume: 2
+            pitch: 0.1
+        left:
+          shoot_particle:
+            distance: 10
+            name: FLAME
+          damage_entity_in_sight:
+            damage: 60
+            distance: 10
+          decrement_durability:
+            amount: 10
+          play_sound:
+            name: minecraft:entity.ender_dragon.shoot
+            volume: 2
+            pitch: 1        
+  amber_bone_staff:
+    display_name: "Amber Bone Staff"
+    lore: 
+      - "&6&eᴘᴏᴡᴇʀꜱ:"
+      - "  &#FF8C00• &fʟᴇꜰᴛ ᴄʟɪᴄᴋ &n&lᴛᴡɪᴄᴇ&7 ᴛᴏ ꜱʜᴏᴏᴛ ᴀ &6ꜰɪʀᴇʙᴀʟʟ"
+      - "  &#FF8C00• &fʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ &cʜᴇᴀʟ"
+      - " "
+      - "6 ꜱᴇᴄᴏɴᴅ ᴄᴏᴏʟᴅᴏᴡɴ"
+    resource:
+      material: IRON_SWORD
+      generate: true
+      textures:
+      - customequipments:item/amber_bone_staff.png
+    durability:
+      max_custom_durability: 512
+    blocked_enchants:
+    - ALL
+    item_flags:
+    - HIDE_ENCHANTS
+    events_settings:
+      cooldown:
+        indicator: HUD
+        ticks: 120  
+    events:
+      interact:
+        right:
+          play_particle:
+            name: HEART
+          potion_effect:
+            type: REGENERATION
+            duration: 60
+            amplifier: 2
+            particle: HEART
+          play_sound:
+            name: minecraft:entity.witch.drink
+            volume: 2
+            pitch: 0.1
+        left:
+          shoot_particle:
+            distance: 7
+            name: FLAME
+          execute_commands:
+            1:
+              command: 'execute at {player} run summon minecraft:fireball ~ ~1.5 ~ {direction:[0.0,0.0,0.0]}'  
+              silent: true
+              as_console: true
+          play_sound:
+            name: minecraft:entity.ender_dragon.shoot
+            volume: 2
+            pitch: 1
+
+# Amber armor item properties
+  amber_embedded_netherite_helmet:
+    name: "Amber Embedded Netherite helmet"
+    lore: 
+      - ""
+      - "&#452E3Fɴᴇᴛʜᴇʀɪᴛᴇ ʜᴇʟᴍᴇᴛ &5ᴇᴍʙᴇᴅᴅᴇᴅ &fᴡɪᴛʜ &#FF8C00&lᴀᴍʙᴇʀ"
+      - "&fʏᴏᴜ ɢᴀɪɴ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ &9ᴀᴛʀɪʙᴜᴛᴇꜱ:"
+    resource:
+      generate: true
+      texture: item/amber_netherite_helmet
+      material: NETHERITE_HELMET
+    equipment:
+      id: customequipments:amber_netherite
+      slot_attribute_modifiers:
+        armor: 3
+        armorToughness: 3
+        knockbackResistance: 0.1
+        max_health: 4
+  amber_embedded_netherite_chestplate:
+    name: "Amber Embedded Netherite Chestplate"
+    lore: 
+      - ""
+      - "&#452E3Fɴᴇᴛʜᴇʀɪᴛᴇ ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ &5ᴇᴍʙᴇᴅᴅᴇᴅ &fᴡɪᴛʜ &#FF8C00&lᴀᴍʙᴇʀ"
+      - "&fʏᴏᴜ ɢᴀɪɴ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ &9ᴀᴛʀɪʙᴜᴛᴇꜱ:"
+    resource:
+      generate: true
+      texture: item/amber_netherite_chestplate
+      material: NETHERITE_CHESTPLATE
+    equipment:
+      id: customequipments:amber_netherite
+      slot_attribute_modifiers:
+        armor: 8
+        armorToughness: 3
+        knockbackResistance: 0.1
+        blockBreakSpeed: 1
+  amber_embedded_netherite_leggings:
+    name: "Amber Embedded Netherite Leggings"
+    lore: 
+      - ""
+      - "&#452E3Fɴᴇᴛʜᴇʀɪᴛᴇ ʟᴇɢɢɪɴɢꜱ &5ᴇᴍʙᴇᴅᴅᴇᴅ &fᴡɪᴛʜ &#FF8C00&lᴀᴍʙᴇʀ"
+      - "&fʏᴏᴜ ɢᴀɪɴ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ &9ᴀᴛʀɪʙᴜᴛᴇꜱ:"
+    resource:
+      generate: true
+      texture: item/amber_netherite_leggings
+      material: NETHERITE_LEGGINGS
+    equipment:
+      id: customequipments:amber_netherite
+      slot_attribute_modifiers:
+        armor: 6
+        armorToughness: 3
+        knockbackResistance: 0.1
+        sneakingSpeed: 1
+  amber_embedded_netherite_boots:
+    name: "Amber Embedded Netherite Boots"
+    lore: 
+      - ""
+      - "&#452E3Fɴᴇᴛʜᴇʀɪᴛᴇ ʙᴏᴏᴛꜱ &5ᴇᴍʙᴇᴅᴅᴇᴅ &fᴡɪᴛʜ &#FF8C00&lᴀᴍʙᴇʀ"
+      - "&fʏᴏᴜ ɢᴀɪɴ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ &9ᴀᴛʀɪʙᴜᴛᴇꜱ:"
+    resource:
+      generate: true
+      texture: item/amber_netherite_boots
+      material: NETHERITE_BOOTS
+    equipment:
+      id: customequipments:amber_netherite
+      slot_attribute_modifiers:
+        armor: 3
+        armorToughness: 3
+        knockbackResistance: 0.1
+        movementSpeed: 0.02
+        jumpStrength: 0.15
+
+# Crafting and anvil repaor recipes for all Amber items and blocks (if applicable)
+recipes:
+  crafting_table:
+    amber_staff:
+      enabled: true
+      pattern:
+      - XAA
+      - XSA
+      - SXX
+      ingredients:
+        A: customores:amber
+        S: stick
+      result:
+        item: customequipments:amber_staff
+        amount: 1 
+    amber_bone_staff:
+      enabled: true
+      pattern:
+      - XBA
+      - XBB
+      - BXX
+      ingredients:
+        A: customores:amber
+        B: bone
+      result:
+        item: customequipments:amber_bone_staff
+        amount: 1
+    amber_embedded_netherite_helmet:
+      enabled: true 
+      shapeless: true
+      ingredients:
+        A: customores:amber
+        B: netherite_helmet
+      result:
+        item: customequipments:amber_embedded_netherite_helmet
+        amount: 1
+    amber_embedded_netherite_chestplate:
+      enabled: true 
+      shapeless: true
+      ingredients:
+        A: customores:amber
+        B: netherite_chestplate
+      result:
+        item: customequipments:amber_embedded_netherite_chestplate
+        amount: 1
+    amber_embedded_netherite_leggings:
+      enabled: true 
+      shapeless: true
+      ingredients:
+        A: customores:amber
+        B: netherite_leggings
+      result:
+        item: customequipments:amber_embedded_netherite_leggings
+        amount: 1
+    amber_embedded_netherite_boots:
+      enabled: true 
+      shapeless: true
+      ingredients:
+        A: customores:amber
+        B: netherite_boots
+      result:
+        item: customequipments:amber_embedded_netherite_boots
+        amount: 1
+  
+  anvil_repair:
+    amber_embedded_netherite_helmet:
+      enabled: true
+      ingredient: NETHERITE_INGOT
+      item: customequipments:amber_embedded_netherite_helmet
+    amber_embedded_netherite_chestplate:
+      enabled: true
+      ingredient: NETHERITE_INGOT
+      item: customequipments:amber_embedded_netherite_chestplate
+    amber_embedded_netherite_leggings:
+      enabled: true
+      ingredient: NETHERITE_INGOT
+      item: customequipments:amber_embedded_netherite_leggings
+    amber_embedded_netherite_boots:
+      enabled: true
+      ingredient: NETHERITE_INGOT
+      item: customequipments:amber_embedded_netherite_boots
+
+# Armor layer stuff
+equipments:
+  amber_netherite:
+    type: armor
+    layer_1: customequipments:armor/amber_layer_1
+    layer_2: customequipments:armor/amber_layer_2

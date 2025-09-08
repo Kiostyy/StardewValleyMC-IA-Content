@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  cauliflower_seeds:
+    enabled: true
+    display_name: "Cauliflower Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow cauliflower."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/cauliflower/seeds # Link to ItemsAdder/contents/textures/item/cauliflower/{filename}.png
+
+  cauliflower_stage_1:
+    enabled: true
+    display_name: cauliflower_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cauliflower/stage_1 # Link to ItemsAdder/contents/textures/item/cauliflower/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  cauliflower_stage_2:
+    enabled: true
+    display_name: cauliflower_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cauliflower/stage_2 # Link to ItemsAdder/contents/textures/item/cauliflower/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  cauliflower_stage_3:
+    enabled: true
+    display_name: cauliflower_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cauliflower/stage_3 # Link to ItemsAdder/contents/textures/item/cauliflower/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  cauliflower_stage_4:
+    enabled: true
+    display_name: cauliflower_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cauliflower/stage_4 # Link to ItemsAdder/contents/textures/item/cauliflower/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

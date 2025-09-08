@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  coffee_bean:
+    enabled: true
+    display_name: Coffee Bean
+    lore:
+      - "&7&oA versatile ingredient for brewing."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/coffee_bean/coffee_bean # Link to ItemsAdder/contents/textures/item/coffee_bean/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

@@ -1,0 +1,17 @@
+info:
+  namespace: customfoods
+items:
+  butter:
+    enabled: true
+    display_name: Butter
+    lore:
+      - "&7&oA creamy dairy product."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/butter
+    consumable:
+      nutrition: 1
+      saturation: 1
+      can_always_eat: true

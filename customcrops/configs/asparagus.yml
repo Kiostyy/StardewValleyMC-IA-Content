@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  asparagus:
+    enabled: true
+    display_name: Asparagus
+    lore:
+      - "&7&oA healthy vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/asparagus/asparagus # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

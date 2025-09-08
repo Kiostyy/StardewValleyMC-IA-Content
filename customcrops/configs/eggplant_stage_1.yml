@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  eggplant_seeds:
+    enabled: true
+    display_name: "Eggplant Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow eggplant."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/eggplant/seeds # Link to ItemsAdder/contents/textures/item/eggplant/{filename}.png
+
+  eggplant_stage_1:
+    enabled: true
+    display_name: eggplant_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/eggplant/stage_1 # Link to ItemsAdder/contents/textures/item/eggplant/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  eggplant_stage_2:
+    enabled: true
+    display_name: eggplant_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/eggplant/stage_2 # Link to ItemsAdder/contents/textures/item/eggplant/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  eggplant_stage_3:
+    enabled: true
+    display_name: eggplant_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/eggplant/stage_3 # Link to ItemsAdder/contents/textures/item/eggplant/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  eggplant_stage_4:
+    enabled: true
+    display_name: eggplant_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/eggplant/stage_4 # Link to ItemsAdder/contents/textures/item/eggplant/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

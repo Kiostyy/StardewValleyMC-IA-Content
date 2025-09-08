@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  broccoli:
+    enabled: true
+    display_name: Broccoli
+    lore:
+      - "&7&oA nutritious green vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/broccoli/broccoli # Link to ItemsAdder/contents/textures/item/broccoli/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  chili:
+    enabled: true
+    display_name: Chili
+    lore:
+      - "&7&oA spicy pepper used in cooking."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/chili/chili # Link to ItemsAdder/contents/textures/item/chili/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

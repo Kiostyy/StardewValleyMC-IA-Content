@@ -1,0 +1,16 @@
+info:
+  namespace: vanillaex
+entities_populators:
+  baby_enderman:
+    entity: vanillaex:baby_enderman
+    chance: 3
+    spawn_logic:
+      method: SPAWN_NEAR
+      types:
+      - ENDERMAN
+entities:
+  baby_enderman:
+    model_folder: entity/baby_enderman
+    type: ENDERMAN
+    speed:
+      movement: 0.13

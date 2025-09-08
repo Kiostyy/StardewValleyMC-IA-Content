@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  coffee_bean_seeds:
+    enabled: true
+    display_name: "Coffee Bean Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow coffee beans."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/coffee_bean/seeds # Link to ItemsAdder/contents/textures/item/coffee_bean/{filename}.png
+
+  coffee_bean_stage_1:
+    enabled: true
+    display_name: coffee_bean_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/coffee_bean/stage_1 # Link to ItemsAdder/contents/textures/item/coffee_bean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  coffee_bean_stage_2:
+    enabled: true
+    display_name: coffee_bean_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/coffee_bean/stage_2 # Link to ItemsAdder/contents/textures/item/coffee_bean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  coffee_bean_stage_3:
+    enabled: true
+    display_name: coffee_bean_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/coffee_bean/stage_3 # Link to ItemsAdder/contents/textures/item/coffee_bean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  coffee_bean_stage_4:
+    enabled: true
+    display_name: coffee_bean_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/coffee_bean/stage_4 # Link to ItemsAdder/contents/textures/item/coffee_bean/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

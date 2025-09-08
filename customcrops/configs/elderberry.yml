@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  elderberry:
+    enabled: true
+    display_name: Elderberry
+    lore:
+      - "&7&oA sweet and tangy berry."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/elderberry/elderberry # Link to ItemsAdder/contents/textures/item/elderberry/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

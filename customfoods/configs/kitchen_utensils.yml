@@ -1,0 +1,77 @@
+info:
+  namespace: customfoods
+items:
+  grinder:
+    enabled: true
+    display_name: "Grinder"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/grinder
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+
+  knife:
+    enabled: true
+    display_name: "Knife"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/knife
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+
+  frying_pan:
+    enabled: true
+    display_name: "Frying Pan"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/frying_pan
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+
+  cooking_pot:
+    enabled: true
+    display_name: "Cooking Pot"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/cooking_pot
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+
+
+# Recipe Section
+recipes:
+  crafting_table:
+    knife_recipes:
+      enabled: true
+      pattern:
+        - XA
+        - BX
+      ingredients:
+        A: IRON_INGOT
+        B: STICK
+      result:
+        item: customfoods:knife
+        amount: 1
+    grinder_recipes:
+      enabled: true
+      pattern:
+        - AX
+        - BX
+      ingredients:
+        A: PISTON
+        B: HOPPER
+      result:
+        item: customfoods:grinder
+        amount: 1

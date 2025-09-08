@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  elderberry_seeds:
+    enabled: true
+    display_name: "Elderberry Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow elderberries."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/elderberry/seeds # Link to ItemsAdder/contents/textures/item/elderberry/{filename}.png
+
+  elderberry_stage_1:
+    enabled: true
+    display_name: elderberry_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/elderberry/stage_1 # Link to ItemsAdder/contents/textures/item/elderberry/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  elderberry_stage_2:
+    enabled: true
+    display_name: elderberry_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/elderberry/stage_2 # Link to ItemsAdder/contents/textures/item/elderberry/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  elderberry_stage_3:
+    enabled: true
+    display_name: elderberry_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/elderberry/stage_3 # Link to ItemsAdder/contents/textures/item/elderberry/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  elderberry_stage_4:
+    enabled: true
+    display_name: elderberry_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/elderberry/stage_4 # Link to ItemsAdder/contents/textures/item/elderberry/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

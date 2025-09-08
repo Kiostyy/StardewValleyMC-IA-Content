@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  zucchini:
+    enabled: true
+    display_name: Zucchini
+    lore:
+      - "&7&oA versatile vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/zucchini/zucchini # Link to ItemsAdder/contents/textures/item/zucchini/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

@@ -1,0 +1,9 @@
+info:
+  namespace: customequipments
+categories:
+  customequipments: 
+    enabled: true
+    icon: "customequipments:amber_staff"
+    name: 'Custom Equipments'
+    items:
+     - "customequipments:*"

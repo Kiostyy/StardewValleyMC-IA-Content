@@ -1,0 +1,29 @@
+info:
+  namespace: customfoods
+items:
+  noodle:
+    enabled: true
+    display_name: Noodle
+    lore:
+      - "&7&oA long, thin strip of pasta."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/noodle
+    consumable:
+      nutrition: 1
+      saturation: 1
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    noodle:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: customfoods:dough
+      result:
+        item: customfoods:noodle
+        amount: 3

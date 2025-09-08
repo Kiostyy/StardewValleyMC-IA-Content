@@ -1,0 +1,9 @@
+info:
+  namespace: customfoods
+categories:
+  customfoods:
+    enabled: true
+    icon: "customfoods:burger"
+    name: "CustomFoods"
+    items:
+      - "customfoods:*"

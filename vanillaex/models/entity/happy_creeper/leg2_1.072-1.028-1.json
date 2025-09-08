@@ -1,0 +1,10 @@
+{
+	"parent": "vanillaex:entity/happy_creeper/leg2",
+	"display": {
+		"head": {
+			"translation": [0, -3.1104, 0],
+			"scale": [1.072, 1.028, 1],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

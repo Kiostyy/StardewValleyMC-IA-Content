@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  hops:
+    enabled: true
+    display_name: Hops
+    lore:
+      - "&7&oA climbing plant used in brewing."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/hops/hops # Link to ItemsAdder/contents/textures/item/hops/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

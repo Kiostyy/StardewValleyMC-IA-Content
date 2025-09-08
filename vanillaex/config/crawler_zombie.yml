@@ -1,0 +1,29 @@
+info:
+  namespace: vanillaex
+entities:
+  crawler_zombie:
+    model_folder: entity/crawler_zombie
+    type: ZOMBIE
+    can_sun_burn: true
+    speed:
+      movement: 0.1
+entities_populators:
+  crawler_zombie:
+    entity: vanillaex:crawler_zombie
+    chance: 20
+    spawn_logic:
+      method: REPLACE
+      types:
+      - ZOMBIE
+    location_range:
+      y:
+        min: 100
+loots:
+  mobs:
+    zombie:
+      type: ZOMBIE
+      commands:
+        my_list_1:
+          chance: 1
+          my_command_1:
+            command: iaentity summon vanillaex:crawler_zombie {world} {target-x} {target-y} {target-z} {target-inverse-yaw} {target-pitch}

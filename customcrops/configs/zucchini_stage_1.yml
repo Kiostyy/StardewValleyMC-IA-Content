@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  zucchini_seeds:
+    enabled: true
+    display_name: "Zucchini Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow zucchinis."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/zucchini/seeds # Link to ItemsAdder/contents/textures/item/zucchini/{filename}.png
+
+  zucchini_stage_1:
+    enabled: true
+    display_name: zucchini_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/zucchini/stage_1 # Link to ItemsAdder/contents/textures/item/zucchini/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  zucchini_stage_2:
+    enabled: true
+    display_name: zucchini_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/zucchini/stage_2 # Link to ItemsAdder/contents/textures/item/zucchini/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  zucchini_stage_3:
+    enabled: true
+    display_name: zucchini_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/zucchini/stage_3 # Link to ItemsAdder/contents/textures/item/zucchini/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  zucchini_stage_4:
+    enabled: true
+    display_name: zucchini_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/zucchini/stage_4 # Link to ItemsAdder/contents/textures/item/zucchini/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

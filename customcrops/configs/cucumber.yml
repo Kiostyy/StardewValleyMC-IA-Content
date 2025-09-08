@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  cucumber:
+    enabled: true
+    display_name: Cucumber
+    lore:
+      - "&7&oA refreshing vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/cucumber/cucumber # Link to ItemsAdder/contents/textures/item/cucumber/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

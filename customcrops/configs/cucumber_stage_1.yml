@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  cucumber_seeds:
+    enabled: true
+    display_name: "Cucumber Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow cucumbers."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/cucumber/seeds # Link to ItemsAdder/contents/textures/item/cucumber/{filename}.png
+
+  cucumber_stage_1:
+    enabled: true
+    display_name: cucumber_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cucumber/stage_1 # Link to ItemsAdder/contents/textures/item/cucumber/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  cucumber_stage_2:
+    enabled: true
+    display_name: cucumber_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cucumber/stage_2 # Link to ItemsAdder/contents/textures/item/cucumber/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  cucumber_stage_3:
+    enabled: true
+    display_name: cucumber_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cucumber/stage_3 # Link to ItemsAdder/contents/textures/item/cucumber/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  cucumber_stage_4:
+    enabled: true
+    display_name: cucumber_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/cucumber/stage_4 # Link to ItemsAdder/contents/textures/item/cucumber/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

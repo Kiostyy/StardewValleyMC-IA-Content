@@ -1,0 +1,17 @@
+info:
+  namespace: customfoods
+items:
+  onigiri:
+    enabled: true
+    display_name: Onigiri
+    lore:
+      - "&7&oA Japanese rice ball, often wrapped in seaweed."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/onigiri
+    consumable:
+      nutrition: 6
+      saturation: 4
+      can_always_eat: true

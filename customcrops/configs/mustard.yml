@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  mustard:
+    enabled: true
+    display_name: Mustard
+    lore:
+      - "&7&oA spicy and flavorful condiment."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/mustard/mustard # Link to ItemsAdder/contents/textures/item/mustard/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

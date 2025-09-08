@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  greenbean:
+    enabled: true
+    display_name: Green Bean
+    lore:
+      - "&7&oA crunchy and nutritious vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/greenbean/greenbean # Link to ItemsAdder/contents/textures/item/greenbean/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

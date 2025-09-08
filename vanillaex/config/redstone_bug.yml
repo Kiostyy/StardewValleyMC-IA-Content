@@ -1,0 +1,33 @@
+info:
+  namespace: vanillaex
+entities:
+  redstone_bug:
+    model_folder: entity/redstone_bug
+    type: SILVERFISH
+    can_sun_burn: false
+    speed:
+      movement: 0.15
+loots:
+  blocks:
+    redstone_ore:
+      type: REDSTONE_ORE
+      commands:
+        my_list_1:
+          chance: 100
+          my_command_1:
+            command: iaentity summon vanillaex:redstone_bug {world} {target-x} {target-y} {target-z} {target-inverse-yaw} {target-pitch}
+  mobs:
+    my_loot:
+      type: SILVERFISH
+      metadata:
+        ItemsAdderEntity:
+          name: ItemsAdderEntity
+          value: vanillaex:redstone_bug
+          type: string
+      items:
+        redstone:
+          item: REDSTONE
+          min_amount: 1
+          max_amount: 2
+          chance: 99.9
+          ignore_fortune: false

@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  basil_seeds:
+    enabled: true
+    display_name: "Basil Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow basil."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/basil/seeds # Link to ItemsAdder/contents/textures/item/basil/{filename}.png
+
+  basil_stage_1:
+    enabled: true
+    display_name: basil_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/basil/stage_1 # Link to ItemsAdder/contents/textures/item/basil/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  basil_stage_2:
+    enabled: true
+    display_name: basil_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/basil/stage_2 # Link to ItemsAdder/contents/textures/item/basil/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  basil_stage_3:
+    enabled: true
+    display_name: basil_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/basil/stage_3 # Link to ItemsAdder/contents/textures/item/basil/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  basil_stage_4:
+    enabled: true
+    display_name: basil_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/basil/stage_4 # Link to ItemsAdder/contents/textures/item/basil/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true

@@ -1,0 +1,10 @@
+{
+	"parent": "vanillaex:entity/happy_creeper/head",
+	"display": {
+		"head": {
+			"translation": [0, -2.9792, 0],
+			"scale": [1.031, 1.069, 1],
+			"rotation": [0, 0, 0]
+		}
+	}
+}

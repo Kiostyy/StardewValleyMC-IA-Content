@@ -1,0 +1,28 @@
+info:
+  namespace: customcrops
+items:
+  lemon:
+    enabled: true
+    display_name: Lemon
+    lore:
+      - "&7&oA sour yellow fruit."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/lemon/lemon # Link to ItemsAdder/contents/textures/item/lemon/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1
+
+loots:
+  blocks:
+    oak_leaves_loots:
+      enabled: true
+      type: OAK_LEAVES
+      items:
+        loot1:
+          item: customcrops:lemon
+          min_amount: 1
+          max_amount: 2
+          chance: 5

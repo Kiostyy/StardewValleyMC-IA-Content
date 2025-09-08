@@ -1,0 +1,132 @@
+info:
+  namespace: customores
+items:
+# Amber blocks properties
+  amber_ore_block:
+    display_name: "Amber Ore"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - customores:block/amber_ore_block.png
+    specific_properties:
+      block:
+        hardness: 3
+        cancel_drop: true
+        break_tools_whitelist: # Here you can add tools that you want to be able to break the block
+        - DIAMOND_PICKAXE
+        - NETHERITE_PICKAXE
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+          rotx: 0
+          roty: 0
+        sound:
+          break:
+            name: minecraft:block.stone.break
+          place:
+            name: minecraft:block.stone.place
+          step:
+            name: minecraft:block.stone.place
+            pitch: 1.4
+            volume: 0.1         
+  amber_block:
+    display_name: "Amber Block"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - customores:block/amber_block.png
+    specific_properties:
+      block:
+        hardness: 3
+        break_tools_whitelist: # Here you can add tools that you want to be able to break the block
+        - DIAMOND_PICKAXE
+        - NETHERITE_PICKAXE
+        - IRON_PICKAXE
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+          rotx: 0
+          roty: 0
+        sound:
+          break:
+            name: minecraft:block.stone.break
+          place:
+            name: minecraft:block.stone.place
+          step:
+            name: minecraft:block.stone.place
+            pitch: 1.4
+            volume: 0.1 
+
+# Amber "ingot" item            
+  amber:
+    display_name: "Amber"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - customores:item/amber.png
+
+# Crafting and anvil repaor recipes for all Amber items and blocks (if applicable)
+recipes:
+  crafting_table:
+    amber_block:
+      enabled: true 
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: customores:amber
+      result:
+        item: customores:amber_block
+        amount: 1
+    amber:
+      enabled: true 
+      shapeless: true
+      ingredients:
+        A: customores:amber_block
+      result:
+        item: customores:amber
+        amount: 9
+
+# Amber ore block and minecraft:stone block loot
+loots:
+  blocks:
+    amber_ore_block:
+      type: customores:amber_ore_block
+      items:
+        result_1:
+          item: customores:amber
+          min_amount: 1 # Minimum amount of Amber the Amber ore block can drop.
+          max_amount: 1 # Maximum amount of Amber the Amber ore block can drop.
+          chance: 100 # Chance of Amber or block dropping Amber (100 = always).
+          ignore_fortune: false # If kept to false, fortune enchants will work on Amber ore block.
+    stone:
+      type: STONE
+      items:
+        result_1:
+          item: customores:amber
+          min_amount: 1
+          max_amount: 1
+          chance: 0.01 # Chance of dropping Amber when mining minecraft:stone.
+          ignore_fortune: true # If set to false, fortune will work on minecraft:stone for Amber.
+
+# Ore generation    
+worlds_populators:
+  amber_ore_block:
+    block: customores:amber_ore_block
+    worlds: 
+    - world # If you have a custom world name, make sure to change this to your world name!
+    - resource_world
+    replaceable_blocks:
+    - STONE
+    - ANDESITE
+    - GRAVEL
+    # You can change these values if you want the ores to be more or less rare.
+    chunk_chance: 1 # Chance of a vein spawning in a chunk.
+    max_height: 20 # Maximum y level that the ores may spawn in.
+    min_height: 5 # Minimum y level the ores may spawn in.
+    vein_blocks: 1 # How many possible ore blocks inside of veins per chunk.
+    chunk_veins: 1 # How many possible ore veins per chunk.

@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  kale:
+    enabled: true
+    display_name: Kale
+    lore:
+      - "&7&oA leafy green vegetable."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/kale/kale # Link to ItemsAdder/contents/textures/item/kale/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

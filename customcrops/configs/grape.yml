@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  grape:
+    enabled: true
+    display_name: Grape
+    lore:
+      - "&7&oA sweet and tangy berry."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/grape/grape # Link to ItemsAdder/contents/textures/item/grape/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

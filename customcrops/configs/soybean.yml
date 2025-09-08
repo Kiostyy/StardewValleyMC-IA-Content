@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  soybean:
+    enabled: true
+    display_name: Soybean
+    lore:
+      - "&7&oA versatile legume."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/soybean/soybean # Link to ItemsAdder/contents/textures/item/soybean/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

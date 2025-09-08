@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  olive:
+    enabled: true
+    display_name: Olive
+    lore:
+      - "&7&oA small, round fruit used to make oil."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/olive/olive # Link to ItemsAdder/contents/textures/item/olive/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

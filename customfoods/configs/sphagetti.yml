@@ -1,0 +1,32 @@
+info:
+  namespace: customfoods
+items:
+  sphagetti:
+    enabled: true
+    display_name: Sphagetti
+    lore:
+      - "&7&oA delicious Italian dish made with noodles, tomato sauce, and chicken."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/sphagetti
+    consumable:
+      nutrition: 10
+      saturation: 10
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    sphagetti:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: customfoods:noodle
+        B: customcrops:tomato
+        C: customfoods:salt
+        D: COOKED_CHICKEN
+      result:
+        item: customfoods:sphagetti
+        amount: 1

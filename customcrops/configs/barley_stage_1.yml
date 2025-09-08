@@ -1,0 +1,65 @@
+info:
+  namespace: customcrops
+items:
+  barley_seeds:
+    enabled: true
+    display_name: "Barley Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow barley."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/barley/seeds # Link to ItemsAdder/contents/textures/item/barley/{filename}.png
+
+  barley_stage_1:
+    enabled: true
+    display_name: barley_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/barley/stage_1 # Link to ItemsAdder/contents/textures/item/barley/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  barley_stage_2:
+    enabled: true
+    display_name: barley_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/barley/stage_2 # Link to ItemsAdder/contents/textures/item/barley/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  barley_stage_3:
+    enabled: true
+    display_name: barley_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/barley/stage_3 # Link to ItemsAdder/contents/textures/item/barley/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+
+  barley_stage_4:
+    enabled: true
+    display_name: barley_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/barley/stage_4 # Link to ItemsAdder/contents/textures/item/barley/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
