@@ -15,3 +15,28 @@ items:
       nutrition: 7
       saturation: 7
       can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    burger_recipe:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: BREAD
+        B: customfoods:frying_pan
+        C: customcrops:tomato
+        D: customcrops:lettuce
+        E: customfoods:salt
+      result:
+        item: customfoods:burger
+        amount: 1
+      return_items:
+        decrement_durability:
+          frying_pan:
+            item: customfoods:frying_pan
+            amount: 1
+        play_sound:
+          name: customsounds:frying_pan
+          volume: 1
+          pitch: 1
