@@ -37,7 +37,7 @@ recipes:
         amount: 1
       return_items:
         decrement_durability:
-          food_press:
+          grinder:
             item: customfoods:grinder
             amount: 1
         play_sound:
