@@ -94,7 +94,7 @@ recipes:
         - AXA
         - AAA
       ingredients:
-        A: COPPER_INGOT
+        A: IRON_INGOT
         B: IRON_NUGGET
       result:
         item: customfoods:cooking_pot
