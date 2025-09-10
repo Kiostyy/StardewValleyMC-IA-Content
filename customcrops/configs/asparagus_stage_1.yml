@@ -50,16 +50,3 @@ items:
         placed_model:
           type: REAL_WIRE
         cancel_drop: true
-
-  asparagus_stage_4:
-    enabled: true
-    display_name: asparagus_stage_4
-    resource:
-      material: PAPER
-      generate: false
-      model_path: item/asparagus/stage_4 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
-    specific_properties:
-      block:
-        placed_model:
-          type: REAL_WIRE
-        cancel_drop: true
