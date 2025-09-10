@@ -87,3 +87,15 @@ recipes:
       result:
         item: customfoods:frying_pan
         amount: 1
+    cooking_pot_recipes:
+      enabled: true
+      pattern:
+        - BXB
+        - AXA
+        - AAA
+      ingredients:
+        A: COPPER_INGOT
+        B: IRON_NUGGET
+      result:
+        item: customfoods:cooking_pot
+        amount: 1
