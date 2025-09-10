@@ -19,7 +19,7 @@ items:
 # Recipe Section
 recipes:
   crafting_table:
-    fries:
+    grilled_eggplant_recipe:
       enabled: true
       shapeless: true
       ingredients:

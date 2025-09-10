@@ -12,54 +12,54 @@ items:
       textures:
         - item/asparagus/seeds # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
 
-  # asparagus_stage_1:
-  #   enabled: true
-  #   display_name: asparagus_stage_1
-  #   resource:
-  #     material: PAPER
-  #     generate: false
-  #     model_path: item/asparagus/stage_1 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
-  #   specific_properties:
-  #     block:
-  #       placed_model:
-  #         type: REAL_WIRE
-  #       cancel_drop: true
+  asparagus_stage_1:
+    enabled: true
+    display_name: asparagus_stage_1
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/asparagus/stage_1 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
 
-  # asparagus_stage_2:
-  #   enabled: true
-  #   display_name: asparagus_stage_2
-  #   resource:
-  #     material: PAPER
-  #     generate: false
-  #     model_path: item/asparagus/stage_2 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
-  #   specific_properties:
-  #     block:
-  #       placed_model:
-  #         type: REAL_WIRE
-  #       cancel_drop: true
+  asparagus_stage_2:
+    enabled: true
+    display_name: asparagus_stage_2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/asparagus/stage_2 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
 
-  # asparagus_stage_3:
-  #   enabled: true
-  #   display_name: asparagus_stage_3
-  #   resource:
-  #     material: PAPER
-  #     generate: false
-  #     model_path: item/asparagus/stage_3 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
-  #   specific_properties:
-  #     block:
-  #       placed_model:
-  #         type: REAL_WIRE
-  #       cancel_drop: true
+  asparagus_stage_3:
+    enabled: true
+    display_name: asparagus_stage_3
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/asparagus/stage_3 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
 
-  # asparagus_stage_4:
-  #   enabled: true
-  #   display_name: asparagus_stage_4
-  #   resource:
-  #     material: PAPER
-  #     generate: false
-  #     model_path: item/asparagus/stage_4 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
-  #   specific_properties:
-  #     block:
-  #       placed_model:
-  #         type: REAL_WIRE
-  #       cancel_drop: true
+  asparagus_stage_4:
+    enabled: true
+    display_name: asparagus_stage_4
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/asparagus/stage_4 # Link to ItemsAdder/contents/textures/item/asparagus/{filename}.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
