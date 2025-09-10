@@ -75,3 +75,15 @@ recipes:
       result:
         item: customfoods:grinder
         amount: 1
+    frying_pan_recipes:
+      enabled: true
+      pattern:
+        - XAX
+        - AAA
+        - BAX
+      ingredients:
+        A: IRON_INGOT
+        B: STICK
+      result:
+        item: customfoods:frying_pan
+        amount: 1
