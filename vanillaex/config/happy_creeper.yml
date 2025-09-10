@@ -3,7 +3,7 @@ info:
 entities_populators:
   happy_creeper:
     entity: vanillaex:happy_creeper
-    chance: 3
+    chance: 1
     spawn_logic:
       method: REPLACE
       types:
@@ -22,9 +22,9 @@ entities:
         priority: 7
         blocks:
         - POPPY
-      attack_near:
-        priority: 8
-        entity: CREEPER
+      # attack_near:
+      #   priority: 8
+      #   entity: CREEPER
       look_at_entity:
         priority: 8
         entity: PLAYER
