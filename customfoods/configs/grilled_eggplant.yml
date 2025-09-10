@@ -1,0 +1,40 @@
+info:
+  namespace: customfoods
+items:
+  grilled_eggplant:
+    enabled: true
+    display_name: "Grilled Eggplant"
+    lore:
+      - "&7&oA tasty grilled eggplant slice."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/grilled_eggplant
+    consumable:
+      nutrition: 5
+      saturation: 4
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    fries:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: customcrops:eggplant
+        B: customfoods:salt
+        C: customfoods:frying_pan
+      result:
+        item: customfoods:grilled_eggplant
+        amount: 2
+      return_items:
+        decrement_durability:
+          frying_pan:
+            item: customfoods:frying_pan
+            amount: 1
+        play_sound:
+          name: customsounds:frying_pan
+          volume: 1
+          pitch: 1
