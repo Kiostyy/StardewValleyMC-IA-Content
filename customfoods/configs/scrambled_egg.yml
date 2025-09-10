@@ -1,16 +1,16 @@
 info:
   namespace: customfoods
 items:
-  fries:
+  scrambled_egg:
     enabled: true
-    display_name: Fries
+    display_name: Scrambled Egg
     lore:
-      - "&7&oWho doesn't love fries?"
+      - "&7&oA delicious scrambled egg dish."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/fries
+        - item/scrambled_egg
     consumable:
       nutrition: 4
       saturation: 4
@@ -19,22 +19,22 @@ items:
 # Recipe Section
 recipes:
   crafting_table:
-    fries:
+    scrambled_egg:
       enabled: true
       shapeless: true
       ingredients:
-        A: BAKED_POTATO
+        A: EGG
         B: customfoods:salt
-        C: customfoods:knife
+        C: customfoods:frying_pan
       result:
-        item: customfoods:fries
-        amount: 2
+        item: customfoods:scrambled_egg
+        amount: 1
       return_items:
         decrement_durability:
-          knife:
-            item: customfoods:knife
+          frying_pan:
+            item: customfoods:frying_pan
             amount: 1
         play_sound:
-          name: customsounds:knife
+          name: customsounds:frying_pan
           volume: 1
           pitch: 1

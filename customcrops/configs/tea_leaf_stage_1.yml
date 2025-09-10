@@ -1,6 +1,17 @@
 info:
   namespace: customcrops
-items:        
+items:
+  tea_leaf_seeds:
+    enabled: true
+    display_name: "Tea Leaf Seeds"
+    lore:
+      - "&7&oPlant these seeds to grow tea leaves."
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/tea_leaf/seeds # Link to ItemsAdder/contents/textures/item/tea_leaf/{filename}.png
+
   tea_leaf_stage_1:
     enabled: true
     display_name: tea_leaf_stage_1

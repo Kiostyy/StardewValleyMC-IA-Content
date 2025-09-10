@@ -24,6 +24,16 @@ recipes:
       shapeless: true
       ingredients:
         A: SALMON
+        B: customfoods:knife
       result:
         item: customfoods:salmonsashimi
         amount: 2
+      return_items:
+        decrement_durability:
+          knife:
+            item: customfoods:knife
+            amount: 1
+        play_sound:
+          name: customsounds:knife
+          volume: 1
+          pitch: 1
