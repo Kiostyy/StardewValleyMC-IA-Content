@@ -24,9 +24,8 @@ recipes:
       shapeless: true
       ingredients:
         A: customfoods:dough
-        B: customfoods:dough
-        C: customfoods:butter
-        D: customfoods:oven
+        B: customfoods:butter
+        C: customfoods:oven
       result:
         item: customfoods:croissant
         amount: 1

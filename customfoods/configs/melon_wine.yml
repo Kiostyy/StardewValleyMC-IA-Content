@@ -38,6 +38,7 @@ recipes:
         B: POTION
         C: SUGAR
         D: WHEAT
+        E: customfoods:cask
       result:
         item: customfoods:melon_wine
         amount: 1

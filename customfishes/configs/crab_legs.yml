@@ -1,16 +1,16 @@
 info:
   namespace: customfishes
 items:
-  crab_leg:
+  crab_legs:
     enabled: true
-    name: "Crab Leg"
+    name: "Crab Legs"
     lore:
       - "&7&oA tasty crab leg, perfect for a seafood feast."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/crab_leg
+        - item/crab_legs
     consumable:
       nutrition: 2
       saturation: 2
@@ -19,14 +19,14 @@ items:
 # Recipe Section
 recipes:
   crafting_table:
-    crab_leg_recipe:
+    crab_legs_recipe:
       enabled: true
       shapeless: true
       ingredients:
         A: customfishes:crab
         B: customfoods:knife
       result:
-        item: customfoods:crab_leg
+        item: customfishes:crab_legs
         amount: 2
       return_items:
         decrement_durability:

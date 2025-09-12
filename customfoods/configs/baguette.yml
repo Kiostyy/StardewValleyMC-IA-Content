@@ -24,9 +24,8 @@ recipes:
       shapeless: true
       ingredients:
         A: customfoods:dough
-        B: customfoods:dough
-        C: customfoods:salt
-        D: customfoods:oven
+        B: customfoods:salt
+        C: customfoods:oven
       result:
         item: customfoods:baguette
         amount: 1
