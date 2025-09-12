@@ -24,6 +24,16 @@ recipes:
       shapeless: true
       ingredients:
         A: customcrops:artichoke
+        B: customfoods:grinder
       result:
         item: customfoods:wasabi
         amount: 3
+      return_items:
+        decrement_durability:
+          grinder:
+            item: customfoods:grinder
+            amount: 1
+        play_sound:
+          name: customsounds:grinder
+          volume: 1
+          pitch: 1

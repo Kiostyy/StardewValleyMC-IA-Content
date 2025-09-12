@@ -12,8 +12,8 @@ items:
       textures:
         - item/popcorn
     consumable:
-      nutrition: 6
-      saturation: 6
+      nutrition: 4
+      saturation: 4
       can_always_eat: true
 
 # Recipe Section

@@ -1,40 +1,41 @@
 info:
   namespace: customfoods
 items:
-  soysauce:
+  baguette:
     enabled: true
-    display_name: Soy Sauce
+    name: "Baguette"
     lore:
-      - "&7&oA savory sauce made from fermented soybeans."
+      - "&7&oA long, thin loaf of French bread."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/soysauce
+        - item/baguette
     consumable:
-      nutrition: 0
-      saturation: 0
+      nutrition: 5
+      saturation: 5
       can_always_eat: true
-      sound: entity.generic.drink
 
 # Recipe Section
 recipes:
   crafting_table:
-    soysauce_recipe:
+    baguette_recipe:
       enabled: true
       shapeless: true
       ingredients:
-        A: customcrops:soybean
-        B: customfoods:cask
+        A: customfoods:dough
+        B: customfoods:dough
+        C: customfoods:salt
+        D: customfoods:oven
       result:
-        item: customfoods:soysauce
-        amount: 2
+        item: customfoods:baguette
+        amount: 1
       return_items:
         decrement_durability:
-          cask:
-            item: customfoods:cask
+          oven:
+            item: customfoods:oven
             amount: 1
         play_sound:
-          name: customsounds:cask
+          name: customsounds:oven
           volume: 1
           pitch: 1

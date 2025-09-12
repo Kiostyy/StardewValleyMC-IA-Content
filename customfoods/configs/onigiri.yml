@@ -12,6 +12,20 @@ items:
       textures:
         - item/onigiri
     consumable:
-      nutrition: 6
+      nutrition: 5
       saturation: 4
       can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    onigiri_recipe:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: customcrops:rice
+        B: customfoods:salt
+        C: DRIED_KELP
+      result:
+        item: customfoods:onigiri
+        amount: 3

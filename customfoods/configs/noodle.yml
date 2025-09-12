@@ -26,4 +26,4 @@ recipes:
         A: customfoods:dough
       result:
         item: customfoods:noodle
-        amount: 3
+        amount: 1

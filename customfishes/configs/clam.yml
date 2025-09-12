@@ -1,0 +1,30 @@
+info:
+  namespace: customfishes
+items:
+  clam:
+    enabled: true
+    name: "Clam"
+    lore:
+      - "&7&oA fresh clam fished from the sea."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/clam
+    consumable:
+      nutrition: 5
+      saturation: 5
+      can_always_eat: true
+
+#Loot Table Section
+loots:
+  fishing:
+    clam:
+      # biomes:
+      #   - WARM_OCEAN
+      items:
+        item_1:
+          item: customfishes:clam
+          min_amount: 1
+          max_amount: 1
+          chance: 5

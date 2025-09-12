@@ -1,0 +1,30 @@
+info:
+  namespace: customfishes
+items:
+  shrimp:
+    enabled: true
+    name: "Shrimp"
+    lore:
+      - "&7&oA small shrimp, perfect for a seafood dish."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/shrimp
+    consumable:
+      nutrition: 2
+      saturation: 2
+      can_always_eat: true
+
+#Loot Table Section
+loots:
+  fishing:
+    shrimp:
+      # biomes:
+      #   - WARM_OCEAN
+      items:
+        item_1:
+          item: customfishes:shrimp
+          min_amount: 1
+          max_amount: 1
+          chance: 8

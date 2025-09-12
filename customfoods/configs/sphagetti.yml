@@ -27,6 +27,16 @@ recipes:
         B: customcrops:tomato
         C: customfoods:salt
         D: COOKED_CHICKEN
+        E: customfoods:frying_pan
       result:
         item: customfoods:sphagetti
         amount: 1
+      return_items:
+        decrement_durability:
+          frying_pan:
+            item: customfoods:frying_pan
+            amount: 1
+        play_sound:
+          name: customsounds:frying_pan
+          volume: 1
+          pitch: 1

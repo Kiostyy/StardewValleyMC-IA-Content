@@ -19,12 +19,22 @@ items:
 # Recipe Section
 recipes:
   crafting_table:
-    chickennugget:
+    chicken_nugget_recipe:
       enabled: true
       shapeless: true
       ingredients:
         A: COOKED_CHICKEN
         B: customfoods:salt
+        C: customfoods:knife
       result:
         item: customfoods:chicken_nugget
         amount: 2
+      return_items:
+        decrement_durability:
+          knife:
+            item: customfoods:knife
+            amount: 1
+        play_sound:
+          name: customsounds:knife
+          volume: 1
+          pitch: 1

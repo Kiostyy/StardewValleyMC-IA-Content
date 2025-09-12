@@ -1,0 +1,30 @@
+info:
+  namespace: customfishes
+items:
+  crab:
+    enabled: true
+    name: "Crab"
+    lore:
+      - "&7&oA delicious crab caught fresh from the ocean."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/crab
+    consumable:
+      nutrition: 4
+      saturation: 4
+      can_always_eat: true
+
+#Loot Table Section
+loots:
+  fishing:
+    crab:
+      # biomes:
+      #   - WARM_OCEAN
+      items:
+        item_1:
+          item: customfishes:crab
+          min_amount: 1
+          max_amount: 1
+          chance: 5

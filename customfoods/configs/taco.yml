@@ -28,6 +28,16 @@ recipes:
         C: COOKED_BEEF
         D: customcrops:tomato
         E: customcrops:lettuce
+        F: customfoods:oven
       result:
         item: customfoods:taco
         amount: 2
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

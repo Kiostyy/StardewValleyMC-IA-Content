@@ -12,21 +12,34 @@ items:
       textures:
         - item/flour
     consumable:
-      nutrition: 4
-      saturation: 4
+      nutrition: 3
+      saturation: 3
       can_always_eat: true
+    events:
+      eat:
+        potion_effect:
+          type: SLOWNESS
+          amplifier: 1
+          duration: 240
 
 # Recipe Section
 recipes:
-  cooking:
-    flour:
-      ingredient:
-        item: HAY_BLOCK
-      machines:
-        - FURNACE
-        - SMOKER
-      exp: 6
-      cook_time: 900
+  crafting_table:
+    flour_recipe:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: HAY_BLOCK
+        B: customfoods:grinder
       result:
         item: customfoods:flour
         amount: 3
+      return_items:
+        decrement_durability:
+          grinder:
+            item: customfoods:grinder
+            amount: 1
+        play_sound:
+          name: customsounds:grinder
+          volume: 1
+          pitch: 1

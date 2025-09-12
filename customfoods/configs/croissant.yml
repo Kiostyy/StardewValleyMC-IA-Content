@@ -5,7 +5,7 @@ items:
     enabled: true
     name: "Croissant"
     lore:
-      - "&7&oA long, thin strip of pasta."
+      - "&7&oA flaky & layered buttery pastry."
     resource:
       material: APPLE
       generate: true
@@ -21,12 +21,21 @@ recipes:
   crafting_table:
     croissant_recipe:
       enabled: true
-      pattern:
-        - XAX
-        - AXA
-        - XXX
+      shapeless: true
       ingredients:
         A: customfoods:dough
+        B: customfoods:dough
+        C: customfoods:butter
+        D: customfoods:oven
       result:
         item: customfoods:croissant
         amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

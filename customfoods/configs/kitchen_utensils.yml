@@ -49,6 +49,53 @@ items:
       max_durability: 100
       disappear_when_broken: true
 
+  food_press:
+    enabled: true
+    display_name: "Food Press"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/food_press
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+  
+  cask:
+    enabled: true
+    display_name: "Cask"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/cask
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+  
+  fryer:
+    enabled: true
+    display_name: "Fryer"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/fryer
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+  
+  oven:
+    enabled: true
+    display_name: "Oven"
+    resource:
+      material: WOODEN_HOE
+      generate: true
+      textures:
+        - item/oven
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
 
 # Recipe Section
 recipes:
@@ -67,10 +114,11 @@ recipes:
     grinder_recipes:
       enabled: true
       pattern:
-        - AX
-        - BX
+        - XAX
+        - ABA
+        - XAX
       ingredients:
-        A: PISTON
+        A: IRON_INGOT
         B: HOPPER
       result:
         item: customfoods:grinder
@@ -98,4 +146,53 @@ recipes:
         B: IRON_NUGGET
       result:
         item: customfoods:cooking_pot
+        amount: 1
+    food_press_recipes:
+      enabled: true
+      pattern:
+        - AX
+        - BX
+      ingredients:
+        A: PISTON
+        B: HOPPER
+      result:
+        item: customfoods:food_press
+        amount: 1
+    cask_recipes:
+      enabled: true
+      pattern:
+        - AAA
+        - BXB
+        - AAA
+      ingredients:
+        A: OAK_PLANKS
+        B: IRON_INGOT
+      result:
+        item: customfoods:cask
+        amount: 1
+    fryer_recipes:
+      enabled: true
+      pattern:
+        - CAC
+        - ABA
+        - CAC
+      ingredients:
+        A: IRON_INGOT
+        B: HOPPER
+        C: REDSTONE
+      result:
+        item: customfoods:fryer
+        amount: 1
+    oven_recipes:
+      enabled: true
+      pattern:
+        - BAB
+        - ACA
+        - BAB
+      ingredients:
+        A: IRON_BLOCK
+        B: IRON_INGOT
+        C: REDSTONE_BLOCK
+      result:
+        item: customfoods:oven
         amount: 1

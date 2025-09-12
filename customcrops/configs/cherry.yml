@@ -1,0 +1,28 @@
+info:
+  namespace: customcrops
+items:
+  cherry:
+    enabled: true
+    display_name: Cherry
+    lore:
+      - "&7&oA sweet red fruit."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/cherry/cherry # Link to ItemsAdder/contents/textures/item/cherry/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1
+
+loots:
+  blocks:
+    oak_leaves_loots:
+      enabled: true
+      type: CHERRY_LEAVES
+      items:
+        loot1:
+          item: customcrops:cherry
+          min_amount: 1
+          max_amount: 2
+          chance: 5

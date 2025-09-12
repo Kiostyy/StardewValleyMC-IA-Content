@@ -29,6 +29,16 @@ recipes:
         D: customcrops:bellpepper
         E: BROWN_MUSHROOM
         F: customcrops:onion
+        G: customfoods:oven
       result:
         item: customfoods:veggie_pizza
         amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

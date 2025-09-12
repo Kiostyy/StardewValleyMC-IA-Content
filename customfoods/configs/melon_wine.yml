@@ -41,3 +41,12 @@ recipes:
       result:
         item: customfoods:melon_wine
         amount: 1
+      return_items:
+        decrement_durability:
+          cask:
+            item: customfoods:cask
+            amount: 1
+        play_sound:
+          name: customsounds:cask
+          volume: 1
+          pitch: 1

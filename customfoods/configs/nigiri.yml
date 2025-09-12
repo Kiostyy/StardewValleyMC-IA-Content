@@ -12,14 +12,14 @@ items:
       textures:
         - item/nigiri
     consumable:
-      nutrition: 3
-      saturation: 3
+      nutrition: 5
+      saturation: 5
       can_always_eat: true
 
 # Recipe Section
 recipes:
   crafting_table:
-    nigiri:
+    nigiri_recipe:
       enabled: true
       shapeless: true
       ingredients:

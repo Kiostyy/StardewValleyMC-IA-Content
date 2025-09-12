@@ -7,6 +7,10 @@ minecraft_lang_overwrite:
       sound.grinder: "Grinder Sound"
       sound.cooking_pot: "Cooking Pot Sound"
       sound.frying_pan: "Frying Pan Sound"
+      sound.cask: "Cask Sound"
+      sound.oven: "Oven Sound"
+      sound.fryer: "Fryer Sound"
+      sound.food_press: "Food Press Sound"
     languages:
     - ALL
 sounds:
@@ -26,3 +30,19 @@ sounds:
     path: frying_pan
     settings:
       subtitle: sound.frying_pan
+  cask:
+    path: cask
+    settings:
+      subtitle: sound.cask
+  oven:
+    path: oven
+    settings:
+      subtitle: sound.oven
+  fryer:
+    path: fryer
+    settings:
+      subtitle: sound.fryer
+  food_press:
+    path: food_press
+    settings:
+      subtitle: sound.food_press
