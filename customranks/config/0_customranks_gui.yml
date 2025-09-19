@@ -1,0 +1,10 @@
+info:
+  namespace: customranks
+categories:
+  customores: 
+    enabled: true
+    icon: "customranks:level_1"
+    name: 'Custom Ranks'
+    items:
+     - "customranks:*"
+     
