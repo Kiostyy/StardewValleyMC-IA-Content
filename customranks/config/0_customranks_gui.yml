@@ -1,7 +1,7 @@
 info:
   namespace: customranks
 categories:
-  customores: 
+  customranks: 
     enabled: true
     icon: "customranks:level_1"
     name: 'Custom Ranks'
