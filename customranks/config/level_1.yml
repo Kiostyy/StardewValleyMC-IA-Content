@@ -4,13 +4,10 @@ items:
   level_1:
     display_name: "Level 1"
     lore:
-      - "&7&oConsume to rank up!"
+      - "&7&oShows you are a Level 1 player!"
+      - "&7&oCannot be obtained any other way!"
     resource:
-      material: APPLE
+      material: PAPER
       generate: true
       textures:
         - font/1.png
-    consumable:
-      nutrition: 5
-      saturation: 5
-      can_always_eat: true
