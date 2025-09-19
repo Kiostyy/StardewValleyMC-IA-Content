@@ -9,7 +9,7 @@ items:
       material: APPLE
       generate: true
       textures:
-        - item/1
+        - font/1.png
     consumable:
       nutrition: 5
       saturation: 5
