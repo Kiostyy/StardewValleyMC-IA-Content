@@ -12,9 +12,15 @@ items:
       textures:
         - item/veggie_pizza
     consumable:
-      nutrition: 10
-      saturation: 10
+      nutrition: 8
+      saturation: 9
       can_always_eat: true
+    events:
+        eat:
+          potion_effect:
+            type: HEALTH_BOOST
+            amplifier: 1
+            duration: 400
 
 # Recipe Section
 recipes:
@@ -23,10 +29,10 @@ recipes:
       enabled: true
       shapeless: true
       ingredients:
-        A: customfoods:dough
+        A: customfoods:dough # H5 S6
         B: customfoods:cheese
-        C: customcrops:tomato
-        D: customcrops:bellpepper
+        C: customcrops:tomato # H1 S1
+        D: customcrops:bellpepper # H1 S1
         E: BROWN_MUSHROOM
         F: customcrops:onion
         G: customfoods:oven
