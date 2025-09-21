@@ -12,8 +12,8 @@ items:
       textures:
         - item/cheese_slice
     consumable:
-      nutrition: 2
-      saturation: 2
+      nutrition: 0.35
+      saturation: 0.35
       can_always_eat: true
 
 # Recipe Section
@@ -27,7 +27,7 @@ recipes:
         B: customfoods:knife
       result:
         item: customfoods:cheese_slice
-        amount: 1
+        amount: 3
       return_items:
         decrement_durability:
           knife:

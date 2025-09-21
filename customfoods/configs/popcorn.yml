@@ -25,8 +25,8 @@ recipes:
       machines:
         - FURNACE
         - SMOKER
-      exp: 1
-      cook_time: 400
+      exp: 0.5
+      cook_time: 800
       result:
         item: customfoods:popcorn
         amount: 1

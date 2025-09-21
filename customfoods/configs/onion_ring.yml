@@ -1,40 +1,40 @@
 info:
   namespace: customfoods
 items:
-  chicken_nugget:
+  onion_ring:
     enabled: true
-    display_name: "Chicken Nugget"
+    display_name: Onion Ring
     lore:
-      - "&7&oCrispy and delicious chicken nuggets."
+      - "&7&oCrispy and delicious onion rings."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/chicken_nugget
+        - item/onion_ring
     consumable:
-      nutrition: 4
-      saturation: 4.4
+      nutrition: 2
+      saturation: 2
       can_always_eat: true
 
 # Recipe Section
 recipes:
   crafting_table:
-    chicken_nugget_recipe:
+    onion_ring_recipe:
       enabled: true
       shapeless: true
       ingredients:
-        A: COOKED_CHICKEN
+        A: customcrops:onion
         B: customfoods:salt
-        C: customfoods:knife
+        C: customfoods:fryer
       result:
-        item: customfoods:chicken_nugget
+        item: customfoods:onion_ring
         amount: 2
       return_items:
         decrement_durability:
-          knife:
-            item: customfoods:knife
+          fryer:
+            item: customfoods:fryer
             amount: 1
         play_sound:
-          name: customsounds:knife
+          name: customsounds:fryer
           volume: 1
           pitch: 1

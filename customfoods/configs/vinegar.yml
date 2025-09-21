@@ -7,7 +7,7 @@ items:
     lore:
       - "&7&oPerfect for seasoning your food!"
     resource:
-      material: PAPER
+      material: APPLE
       generate: true
       textures:
         - item/vinegar
@@ -33,7 +33,7 @@ recipes:
         - FURNACE
         - SMOKER
       exp: 1
-      cook_time: 400
+      cook_time: 800
       result:
         item: customfoods:vinegar
         amount: 1
