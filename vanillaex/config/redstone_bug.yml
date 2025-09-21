@@ -7,6 +7,10 @@ entities:
     can_sun_burn: false
     speed:
       movement: 0.15
+    location_range:
+      y:
+        min: -64
+        max: 25
 loots:
   blocks:
     redstone_ore:

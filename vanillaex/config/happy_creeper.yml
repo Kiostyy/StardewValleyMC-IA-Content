@@ -3,7 +3,7 @@ info:
 entities_populators:
   happy_creeper:
     entity: vanillaex:happy_creeper
-    chance: 1
+    chance: 10
     spawn_logic:
       method: REPLACE
       types:

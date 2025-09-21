@@ -19,7 +19,8 @@ entities_populators:
         max: 23000 # sunrise. also supports the 'sunrise' word directly
     location_range:
       y:
-        max: 10
+        min: -64
+        max: 25
 entities:
   other_steve:
     model_folder: entity/other_steve
