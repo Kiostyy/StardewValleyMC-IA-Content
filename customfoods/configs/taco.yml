@@ -6,6 +6,7 @@ items:
     display_name: Taco
     lore:
       - "&7&oA delicious taco filled with seasoned meat and vegetables."
+      - "  &bStrength - 20s"
     resource:
       material: APPLE
       generate: true

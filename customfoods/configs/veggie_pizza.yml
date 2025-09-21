@@ -6,6 +6,7 @@ items:
     display_name: Veggie Pizza
     lore:
       - "&7&oA delicious pizza topped with fresh vegetables."
+      - "  &bHealth Boost - 20s"
     resource:
       material: APPLE
       generate: true

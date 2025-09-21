@@ -6,6 +6,7 @@ items:
     display_name: Sphagetti
     lore:
       - "&7&oA delicious Italian dish made with noodles, tomato sauce, and chicken."
+      - "  &Regeneration - 6s"
     resource:
       material: APPLE
       generate: true
