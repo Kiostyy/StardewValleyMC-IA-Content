@@ -6,6 +6,9 @@ items:
     name: "Croissant"
     lore:
       - "&7&oA flaky & layered buttery pastry."
+      - ""
+      - "&5When consumed:"
+      - "&Haste - 5s"
     resource:
       material: APPLE
       generate: true
@@ -13,22 +16,31 @@ items:
         - item/croissant
     consumable:
       nutrition: 5
-      saturation: 5
+      saturation: 6
       can_always_eat: true
+    events:
+        drink:
+          potion_effect:
+            type: HASTE
+            amplifier: 1
+            duration: 100
 
 # Recipe Section
 recipes:
   crafting_table:
     croissant_recipe:
       enabled: true
-      shapeless: true
+      pattern:
+        - CAX
+        - ABA
+        - XXX
       ingredients:
         A: customfoods:dough
         B: customfoods:butter
         C: customfoods:oven
       result:
         item: customfoods:croissant
-        amount: 1
+        amount: 3
       return_items:
         decrement_durability:
           oven:

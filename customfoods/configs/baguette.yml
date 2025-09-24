@@ -6,6 +6,9 @@ items:
     name: "Baguette"
     lore:
       - "&7&oA long, thin loaf of French bread."
+      - ""
+      - "&5When consumed:"
+      - "&9Slow Fall - 5s"
     resource:
       material: APPLE
       generate: true
@@ -13,22 +16,31 @@ items:
         - item/baguette
     consumable:
       nutrition: 5
-      saturation: 5
+      saturation: 6
       can_always_eat: true
+    events:
+        drink:
+          potion_effect:
+            type: SLOW_FALLING
+            amplifier: 1
+            duration: 100
 
 # Recipe Section
 recipes:
   crafting_table:
     baguette_recipe:
       enabled: true
-      shapeless: true
+      pattern:
+        - CAX
+        - BAX
+        - XAX
       ingredients:
         A: customfoods:dough
         B: customfoods:salt
         C: customfoods:oven
       result:
         item: customfoods:baguette
-        amount: 1
+        amount: 3
       return_items:
         decrement_durability:
           oven:

@@ -6,6 +6,9 @@ items:
     display_name: Chocolate
     lore:
       - "&7&oA sweet treat made from cocoa."
+      - ""
+      - "&5When consumed:"
+      - "&9Luck - 10s"
     resource:
       material: APPLE
       generate: true
@@ -20,7 +23,7 @@ items:
         potion_effect:
           type: LUCK
           amplifier: 1
-          duration: 240
+          duration: 200
 
 # Recipe Section
 recipes:

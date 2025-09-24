@@ -31,6 +31,7 @@ recipes:
       ingredients:
         A: customfoods:flour
         B: POTION
+        C: EGG
       result:
         item: customfoods:dough
         amount: 2

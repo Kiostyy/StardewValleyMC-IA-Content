@@ -5,16 +5,25 @@ items:
     enabled: true
     display_name: Burger
     lore:
-      - "&7&oA delicious burger with all the toppings."
+      - "&7&oA juicy beef patty with fresh toppings."
+      - ""
+      - "&5When consumed:"
+      - "&9Regeneration - 5s"
     resource:
       material: APPLE
       generate: true
       textures:
         - item/burger
     consumable:
-      nutrition: 7
-      saturation: 7
+      nutrition: 10
+      saturation: 10
       can_always_eat: true
+    events:
+        drink:
+          potion_effect:
+            type: REGENERATION
+            amplifier: 1
+            duration: 100
 
 # Recipe Section
 recipes:
@@ -23,14 +32,15 @@ recipes:
       enabled: true
       shapeless: true
       ingredients:
-        A: BREAD
+        A: customfoods:burger_bun
         B: customfoods:frying_pan
         C: customcrops:tomato
         D: customcrops:lettuce
-        E: customfoods:salt
+        E: COOKED_BEEF
+        F: customfoods:cheese_slice
       result:
         item: customfoods:burger
-        amount: 1
+        amount: 2
       return_items:
         decrement_durability:
           frying_pan:

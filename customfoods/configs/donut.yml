@@ -1,19 +1,19 @@
 info:
   namespace: customfoods
 items:
-  bagel:
+  donut:
     enabled: true
-    name: "Bagel"
+    name: "Donut"
     lore:
-      - "&7&oA round bread roll with a hole in the middle."
+      - "&7&oA sweet, deep-fried pastry."
       - ""
       - "&5When consumed:"
-      - "&9Fire Resist - 5s"
+      - "&9Jump Boost - 5s"
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/bagel
+        - item/donut
     consumable:
       nutrition: 5
       saturation: 6
@@ -21,14 +21,14 @@ items:
     events:
         drink:
           potion_effect:
-            type: FIRE_RESISTANCE
+            type: JUMP_BOOST
             amplifier: 1
             duration: 100
 
 # Recipe Section
 recipes:
   crafting_table:
-    bagel_recipe:
+    donut_recipe:
       enabled: true
       pattern:
         - CAX
@@ -36,17 +36,17 @@ recipes:
         - XAX
       ingredients:
         A: customfoods:dough
-        B: customfoods:salt
-        C: customfoods:oven
+        B: SUGAR
+        C: customfoods:fryer
       result:
-        item: customfoods:bagel
+        item: customfoods:donut
         amount: 4
       return_items:
         decrement_durability:
           oven:
-            item: customfoods:oven
+            item: customfoods:fryer
             amount: 1
         play_sound:
-          name: customsounds:oven
+          name: customsounds:fryer
           volume: 1
           pitch: 1

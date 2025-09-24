@@ -8,7 +8,7 @@ items:
       - "&7&oA delicious taco filled with seasoned meat and vegetables."
       - ""
       - "&5When consumed:"
-      - "&9Strength - 20s"
+      - "&9Strength - 10s"
     resource:
       material: APPLE
       generate: true
@@ -23,7 +23,7 @@ items:
           potion_effect:
             type: STRENGTH
             amplifier: 1
-            duration: 400
+            duration: 200
 
 # Recipe Section
 recipes:

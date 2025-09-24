@@ -1,51 +1,52 @@
 info:
   namespace: customfoods
 items:
-  bagel:
+  waffle:
     enabled: true
-    name: "Bagel"
+    name: "Waffle"
     lore:
-      - "&7&oA round bread roll with a hole in the middle."
+      - "&7&oA square-shaped breakfast treat."
       - ""
       - "&5When consumed:"
-      - "&9Fire Resist - 5s"
+      - "&9Night Vision - 10s"
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/bagel
+        - item/waffle
     consumable:
-      nutrition: 5
-      saturation: 6
+      nutrition: 7
+      saturation: 7
       can_always_eat: true
     events:
         drink:
           potion_effect:
-            type: FIRE_RESISTANCE
+            type: NIGHT_VISION
             amplifier: 1
             duration: 100
 
 # Recipe Section
 recipes:
   crafting_table:
-    bagel_recipe:
+    waffle_recipe:
       enabled: true
-      pattern:
-        - CAX
-        - ABA
-        - XAX
+      shapeless: true
       ingredients:
         A: customfoods:dough
-        B: customfoods:salt
+        B: SUGAR
         C: customfoods:oven
+        D: HONEY_BOTTLE
+        E: customfoods:butter
       result:
-        item: customfoods:bagel
-        amount: 4
+        item: customfoods:waffle
+        amount: 3
       return_items:
         decrement_durability:
           oven:
             item: customfoods:oven
             amount: 1
+        replace:
+          HONEY_BOTTLE: GLASS_BOTTLE
         play_sound:
           name: customsounds:oven
           volume: 1

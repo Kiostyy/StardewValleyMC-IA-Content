@@ -25,9 +25,12 @@ items:
 # Recipe Section
 recipes:
   crafting_table:
-    noodle:
+    noodle_recipe:
       enabled: true
-      shapeless: true
+      pattern:
+        - AXX
+        - XXX
+        - XXX
       ingredients:
         A: customfoods:dough
       result:

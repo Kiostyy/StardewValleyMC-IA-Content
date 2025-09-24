@@ -12,8 +12,8 @@ items:
       textures:
         - item/cheese
     consumable:
-      nutrition: 1
-      saturation: 1
+      nutrition: 2
+      saturation: 2
       can_always_eat: true
 
 # Recipe Section
@@ -35,6 +35,8 @@ recipes:
           cask:
             item: customfoods:cask
             amount: 1
+        replace:
+          MILK_BUCKET: BUCKET
         play_sound:
           name: customsounds:cask
           volume: 1

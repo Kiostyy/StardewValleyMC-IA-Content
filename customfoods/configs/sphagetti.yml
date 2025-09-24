@@ -8,7 +8,7 @@ items:
       - "&7&oA delicious Italian dish made with noodles, tomato sauce, and chicken."
       - ""
       - "&5When consumed:"
-      - "&9Regeneration - 6s"
+      - "&9Regeneration - 3s"
     resource:
       material: APPLE
       generate: true
@@ -23,7 +23,7 @@ items:
           potion_effect:
             type: REGENERATION
             amplifier: 1
-            duration: 120
+            duration: 60
 
 # Recipe Section
 recipes:

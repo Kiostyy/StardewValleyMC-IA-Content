@@ -1,33 +1,33 @@
 info:
   namespace: customfoods
 items:
-  cheese_slice:
+  white_bread_slice:
     enabled: true
-    display_name: Cheese Slice
+    display_name: White Bread Slice
     lore:
-      - "&7&oA thin slice of cheese."
+      - "&7&oA thin slice of white bread."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/cheese_slice
+        - item/white_bread_slice
     consumable:
-      nutrition: 1
-      saturation: 1
+      nutrition: 2
+      saturation: 2
       can_always_eat: true
 
 # Recipe Section
 recipes:
   crafting_table:
-    cheese_slice_recipe:
+    white_bread_slice_recipe:
       enabled: true
       shapeless: true
       ingredients:
-        A: customfoods:cheese
+        A: customfoods:white_bread
         B: customfoods:knife
       result:
-        item: customfoods:cheese_slice
-        amount: 3
+        item: customfoods:white_bread_slice
+        amount: 5
       return_items:
         decrement_durability:
           knife:

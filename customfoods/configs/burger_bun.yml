@@ -1,46 +1,37 @@
 info:
   namespace: customfoods
 items:
-  bagel:
+  burger_bun:
     enabled: true
-    name: "Bagel"
+    name: "Burger Bun"
     lore:
-      - "&7&oA round bread roll with a hole in the middle."
-      - ""
-      - "&5When consumed:"
-      - "&9Fire Resist - 5s"
+      - "&7&oA soft round bun for burgers."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/bagel
+        - item/burger_bun
     consumable:
       nutrition: 5
       saturation: 6
       can_always_eat: true
-    events:
-        drink:
-          potion_effect:
-            type: FIRE_RESISTANCE
-            amplifier: 1
-            duration: 100
 
 # Recipe Section
 recipes:
   crafting_table:
-    bagel_recipe:
+    burger_bun_recipe:
       enabled: true
       pattern:
         - CAX
-        - ABA
-        - XAX
+        - BAX
+        - XXX
       ingredients:
         A: customfoods:dough
         B: customfoods:salt
         C: customfoods:oven
       result:
-        item: customfoods:bagel
-        amount: 4
+        item: customfoods:burger_bun
+        amount: 2
       return_items:
         decrement_durability:
           oven:
