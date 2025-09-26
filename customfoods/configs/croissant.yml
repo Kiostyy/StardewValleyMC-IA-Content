@@ -8,7 +8,7 @@ items:
       - "&7&oA flaky & layered buttery pastry."
       - ""
       - "&5When consumed:"
-      - "&Haste - 5s"
+      - "&9Haste - 5s"
     resource:
       material: APPLE
       generate: true
