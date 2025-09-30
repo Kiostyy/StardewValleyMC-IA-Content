@@ -7,7 +7,7 @@ items:
       lore:
         - "&7&oA hot beverage made from roasted coffee beans."
       graphics:
-        material: POTION
+        material: APPLE
         texture: "item/coffee"
       consumable:
         nutrition: 1

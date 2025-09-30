@@ -7,7 +7,7 @@ items:
       lore:
         - "&7&oA refreshing drink made from fermented melons."
       graphics:
-        material: POTION
+        material: APPLE
         texture: "item/melon_wine"
       consumable:
         nutrition: 1
