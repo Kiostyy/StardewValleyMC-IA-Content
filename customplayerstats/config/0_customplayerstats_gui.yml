@@ -1,0 +1,9 @@
+info:
+  namespace: customplayerstats
+categories:
+  customplayerstats:
+    enabled: false
+    icon: "customplayerstats:dont_have_yet"
+    name: "Custom Player Stats"
+    items:
+      - "customplayerstats:*"

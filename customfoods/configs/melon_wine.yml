@@ -6,11 +6,9 @@ items:
       display_name: "Melon Wine"
       lore:
         - "&7&oA refreshing drink made from fermented melons."
-      resource:
+      graphics:
         material: POTION
-        generate: true
-        textures:
-          - item/melon_wine
+        texture: "item/melon_wine"
       consumable:
         nutrition: 6
         saturation: 0
@@ -18,14 +16,15 @@ items:
         sound: entity.generic.drink
       events:
         drink:
+          increment_player_stat:
+            name: thirst
+            amount: 5
           potion_effect:
             type: NAUSEA
             amplifier: 1
             duration: 240
           give_item:
             item: GLASS_BOTTLE
-          
-
 
 # Recipe Section
 recipes:
