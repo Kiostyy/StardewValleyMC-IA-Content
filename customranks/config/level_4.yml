@@ -1,0 +1,11 @@
+info:
+  namespace: customranks
+items:
+  level_4:
+    display_name: "Level 4"
+    lore:
+      - "&7&oShows you are a Level 4 player!"
+      - "&7&oCannot be obtained any other way!"
+    graphics:
+      textures:
+        layer0: font/4.png

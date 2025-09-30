@@ -31,13 +31,14 @@ recipes:
     donut_recipe:
       enabled: true
       pattern:
-        - CAX
+        - CAD
         - ABA
         - XAX
       ingredients:
         A: customfoods:dough
         B: SUGAR
         C: customfoods:fryer
+        D: customfoods:oil
       result:
         item: customfoods:donut
         amount: 4

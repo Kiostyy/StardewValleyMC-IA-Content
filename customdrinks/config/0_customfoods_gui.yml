@@ -1,0 +1,9 @@
+info:
+  namespace: customdrinks
+categories:
+  customdrinks:
+    enabled: true
+    icon: "customdrinks:beer"
+    name: "Custom Drinks"
+    items:
+      - "customdrinks:*"

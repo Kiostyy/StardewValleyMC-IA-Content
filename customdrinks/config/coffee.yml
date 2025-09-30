@@ -1,0 +1,29 @@
+info:
+  namespace: customdrinks
+items:
+    coffee:
+      enabled: true
+      display_name: "Coffee"
+      lore:
+        - "&7&oA hot beverage made from roasted coffee beans."
+      graphics:
+        material: POTION
+        texture: "item/coffee"
+      consumable:
+        nutrition: 1
+        saturation: 4
+        can_always_eat: true
+        sound: entity.generic.drink
+      events:
+        drink:
+          increment_player_stat:
+            name: thirst
+            amount: 2
+          potion_effect:
+            type: SPEED
+            amplifier: 1
+            duration: 300
+          give_item:
+            item: GLASS_BOTTLE
+
+# Recipe Section

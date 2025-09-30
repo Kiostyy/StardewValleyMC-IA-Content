@@ -26,6 +26,7 @@ recipes:
         A: customcrops:onion
         B: customfoods:salt
         C: customfoods:fryer
+        D: customfoods:oil
       result:
         item: customfoods:onion_ring
         amount: 2

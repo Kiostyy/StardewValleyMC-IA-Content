@@ -4,6 +4,6 @@ categories:
   customfoods:
     enabled: true
     icon: "customfoods:burger"
-    name: "CustomFoods"
+    name: "Custom Foods"
     items:
       - "customfoods:*"

@@ -1,52 +1,52 @@
 info:
   namespace: customfoods
 items:
-  waffle:
+  lemon_tart:
     enabled: true
-    name: "Waffle"
+    name: "Lemon Tart"
     lore:
-      - "&7&oA square-shaped breakfast treat."
+      - "&7&oA sweet and tangy dessert."
       - ""
       - "&5When consumed:"
-      - "&9Night Vision - 5s"
+      - "&9Resistance - 6s"
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/waffle
+        - item/lemon_tart
     consumable:
-      nutrition: 7
-      saturation: 7
+      nutrition: 5
+      saturation: 6
       can_always_eat: true
     events:
         drink:
           potion_effect:
-            type: NIGHT_VISION
+            type: RESISTANCE
             amplifier: 1
-            duration: 100
+            duration: 120
 
 # Recipe Section
 recipes:
   crafting_table:
-    waffle_recipe:
+    lemon_tart_recipe:
       enabled: true
-      shapeless: true
+      pattern:
+        - CDX
+        - ABA
+        - XAX
       ingredients:
         A: customfoods:dough
-        B: SUGAR
+        B: customcrops:lemon
         C: customfoods:oven
-        D: HONEY_BOTTLE
-        E: customfoods:butter
+        D: SUGAR
       result:
-        item: customfoods:waffle
+        item: customfoods:lemon_tart
         amount: 3
       return_items:
         decrement_durability:
           oven:
             item: customfoods:oven
             amount: 1
-        replace:
-          HONEY_BOTTLE: GLASS_BOTTLE
         play_sound:
           name: customsounds:oven
           volume: 1
