@@ -15,8 +15,8 @@ items:
       textures:
         - item/waffle
     consumable:
-      nutrition: 7
-      saturation: 7
+      nutrition: 5
+      saturation: 6
       can_always_eat: true
     events:
         drink:
@@ -39,7 +39,7 @@ recipes:
         E: customfoods:butter
       result:
         item: customfoods:waffle
-        amount: 3
+        amount: 1
       return_items:
         decrement_durability:
           oven:
