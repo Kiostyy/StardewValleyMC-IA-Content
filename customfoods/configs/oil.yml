@@ -20,7 +20,7 @@ items:
         drink:
           potion_effect:
             type: SLOWNESS
-            amplifier: 1
+            amplifier: 0
             duration: 240
 
 # Recipe Section

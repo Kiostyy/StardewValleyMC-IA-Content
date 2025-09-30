@@ -20,7 +20,7 @@ items:
         eat:
           potion_effect:
             type: NAUSEA
-            amplifier: 1
+            amplifier: 0
             duration: 120
     
 # Recipe Section

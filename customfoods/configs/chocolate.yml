@@ -22,7 +22,7 @@ items:
       drink:
         potion_effect:
           type: LUCK
-          amplifier: 1
+          amplifier: 0
           duration: 200
 
 # Recipe Section

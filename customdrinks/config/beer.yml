@@ -21,7 +21,7 @@ items:
             amount: 2
           potion_effect:
             type: NAUSEA
-            amplifier: 1
+            amplifier: 0
             duration: 300
           give_item:
             item: GLASS_BOTTLE

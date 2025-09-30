@@ -19,7 +19,7 @@ items:
         drink:
           potion_effect:
             type: HUNGER
-            amplifier: 1
+            amplifier: 0
             duration: 240
 
 # Recipe Section

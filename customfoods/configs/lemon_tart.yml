@@ -22,7 +22,7 @@ items:
         drink:
           potion_effect:
             type: RESISTANCE
-            amplifier: 1
+            amplifier: 0
             duration: 120
 
 # Recipe Section

@@ -22,7 +22,7 @@ items:
         drink:
           potion_effect:
             type: NIGHT_VISION
-            amplifier: 1
+            amplifier: 0
             duration: 100
 
 # Recipe Section
