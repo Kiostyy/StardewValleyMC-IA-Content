@@ -1,0 +1,56 @@
+info:
+  namespace: customfoods
+items:
+  golden_apple_tart:
+    enabled: true
+    name: "Golden Apple Tart"
+    lore:
+      - "&7A sweet and luxurious dessert."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/golden_apple_tart
+    consumable:
+      nutrition: 5
+      saturation: 6
+      can_always_eat: true
+    events:
+      eat:
+        potion_effect:
+          type: REGENERATION
+          amplifier: 1
+          duration: 120
+        execute_commands:
+          change_me_1:
+            command: effect give {player} minecraft:absorption 300 0
+            as_console: true
+            delay: 1
+
+
+# Recipe Section
+recipes:
+  crafting_table:
+    golden_apple_tart_recipe:
+      enabled: true
+      pattern:
+        - CDX
+        - ABA
+        - XAX
+      ingredients:
+        A: customfoods:dough
+        B: GOLDEN_APPLE
+        C: customfoods:oven
+        D: SUGAR
+      result:
+        item: customfoods:golden_apple_tart
+        amount: 3
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

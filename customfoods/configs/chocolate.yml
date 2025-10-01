@@ -5,10 +5,7 @@ items:
     enabled: true
     display_name: Chocolate
     lore:
-      - "&7&oA sweet treat made from cocoa."
-      - ""
-      - "&5When consumed:"
-      - "&9Luck - 10s"
+      - "&7A sweet treat made from cocoa."
     resource:
       material: APPLE
       generate: true
@@ -19,7 +16,7 @@ items:
       saturation: 2
       can_always_eat: true
     events:
-      drink:
+      eat:
         potion_effect:
           type: LUCK
           amplifier: 0

@@ -1,0 +1,53 @@
+info:
+  namespace: customfoods
+items:
+  chocolate_cake:
+    enabled: true
+    name: "Chocolate Cake"
+    lore:
+      - "&7A rich & decadent chocolate cake."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/chocolate_cake
+    consumable:
+      nutrition: 9
+      saturation: 10
+      can_always_eat: true
+    events:
+      eat:
+        potion_effect:
+          type: GLOWING
+          amplifier: 0
+          duration: 1200
+
+# Recipe Section
+recipes:
+  crafting_table:
+    chocolate_cake_recipe:
+      enabled: true
+      pattern:
+        - CAG
+        - BDF
+        - EEE
+      ingredients:
+        A: customfoods:flour
+        B: customfoods:butter
+        C: customfoods:oven
+        D: customfoods:chocolate
+        E: customfoods:milk_cream
+        F: SUGAR
+        G: EGG
+      result:
+        item: customfoods:chocolate_cake
+        amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

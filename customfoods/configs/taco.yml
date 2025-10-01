@@ -5,10 +5,7 @@ items:
     enabled: true
     display_name: Taco
     lore:
-      - "&7&oA delicious taco filled with seasoned meat and vegetables."
-      - ""
-      - "&5When consumed:"
-      - "&9Strength - 10s"
+      - "&7A delicious taco filled with seasoned meat and vegetables."
     resource:
       material: APPLE
       generate: true
@@ -19,11 +16,11 @@ items:
       saturation: 12
       can_always_eat: true
     events:
-        eat:
-          potion_effect:
-            type: STRENGTH
-            amplifier: 0
-            duration: 200
+      eat:
+        potion_effect:
+          type: STRENGTH
+          amplifier: 0
+          duration: 200
 
 # Recipe Section
 recipes:
@@ -32,21 +29,21 @@ recipes:
       enabled: true
       shapeless: true
       ingredients:
-        A: BREAD
+        A: customfoods:dough
         B: customfoods:salt
         C: COOKED_BEEF # H8 S12.8
         D: customcrops:tomato
         E: customcrops:lettuce
         F: customfoods:oven
       result:
-        item: customfoods:taco
+        item: customfoods:frying_pan
         amount: 1
       return_items:
         decrement_durability:
           oven:
-            item: customfoods:oven
+            item: customfoods:frying_pan
             amount: 1
         play_sound:
-          name: customsounds:oven
+          name: customsounds:frying_pan
           volume: 1
           pitch: 1

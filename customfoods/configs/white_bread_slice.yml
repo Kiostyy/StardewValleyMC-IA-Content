@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: White Bread Slice
     lore:
-      - "&7&oA thin slice of white bread."
+      - "&7A thin slice of white bread."
     resource:
       material: APPLE
       generate: true

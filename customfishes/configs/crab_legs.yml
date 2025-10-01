@@ -5,7 +5,7 @@ items:
     enabled: true
     name: "Crab Legs"
     lore:
-      - "&7&oA tasty crab leg, perfect for a seafood feast."
+      - "&7A tasty crab leg, perfect for a seafood feast."
     resource:
       material: APPLE
       generate: true

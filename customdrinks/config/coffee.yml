@@ -5,7 +5,7 @@ items:
       enabled: true
       display_name: "Coffee"
       lore:
-        - "&7&oA hot beverage made from roasted coffee beans."
+        - "&7A hot beverage made from roasted coffee beans."
       graphics:
         material: APPLE
         texture: "item/coffee"

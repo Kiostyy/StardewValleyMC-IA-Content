@@ -5,10 +5,7 @@ items:
     enabled: true
     display_name: Sphagetti
     lore:
-      - "&7&oA delicious Italian dish made with noodles, tomato sauce, and chicken."
-      - ""
-      - "&5When consumed:"
-      - "&9Regeneration - 3s"
+      - "&7A delicious Italian dish made with noodles, tomato sauce, and chicken."
     resource:
       material: APPLE
       generate: true
@@ -19,11 +16,11 @@ items:
       saturation: 12
       can_always_eat: true
     events:
-        eat:
-          potion_effect:
-            type: REGENERATION
-            amplifier: 0
-            duration: 60
+      eat:
+        potion_effect:
+          type: REGENERATION
+          amplifier: 0
+          duration: 60
 
 # Recipe Section
 recipes:

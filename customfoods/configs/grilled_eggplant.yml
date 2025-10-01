@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: "Grilled Eggplant"
     lore:
-      - "&7&oA tasty grilled eggplant slice."
+      - "&7A tasty grilled eggplant slice."
     resource:
       material: APPLE
       generate: true

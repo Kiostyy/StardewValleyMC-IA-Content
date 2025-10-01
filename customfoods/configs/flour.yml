@@ -5,7 +5,7 @@ items:
     enabled: true
     name: Flour
     lore:
-      - "&7&oA fine powder made from grinding wheat."
+      - "&7A fine powder made from grinding wheat."
     resource:
       material: APPLE
       generate: true

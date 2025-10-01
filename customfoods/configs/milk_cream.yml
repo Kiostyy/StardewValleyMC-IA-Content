@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Milk Cream
     lore:
-      - "&7&oA rich and creamy dairy product."
+      - "&7A rich and creamy dairy product."
     resource:
       material: APPLE
       generate: true
@@ -17,9 +17,9 @@ items:
       can_always_eat: true
       sound: entity.generic.drink
     events:
-        drink:
-          execute_commands:
-            command_1:
-              command: minecraft:effect clear {player}
-              as_console: true
-              delay: 1
+      drink:
+        execute_commands:
+          command_1:
+            command: minecraft:effect clear {player}
+            as_console: true
+            delay: 1

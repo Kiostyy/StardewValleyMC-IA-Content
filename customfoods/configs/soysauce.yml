@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Soy Sauce
     lore:
-      - "&7&oA savory sauce made from fermented soybeans."
+      - "&7A savory sauce made from fermented soybeans."
     resource:
       material: APPLE
       generate: true

@@ -5,7 +5,7 @@ items:
     enabled: true
     name: "Clam"
     lore:
-      - "&7&oA fresh clam fished from the sea."
+      - "&7A fresh clam fished from the sea."
     resource:
       material: APPLE
       generate: true

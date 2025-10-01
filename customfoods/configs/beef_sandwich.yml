@@ -1,0 +1,33 @@
+info:
+  namespace: customfoods
+items:
+  beef_sandwich:
+    enabled: true
+    name: "Beef Sandwich"
+    lore:
+      - "&7A delicious beef sandwich."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/beef_sandwich
+    consumable:
+      nutrition: 10
+      saturation: 10
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    beef_sandwich_recipe:
+      enabled: true
+      pattern:
+        - XAX
+        - XBX
+        - XAX
+      ingredients:
+        A: customfoods:white_bread_slice
+        B: COOKED_BEEF
+      result:
+        item: customfoods:beef_sandwich
+        amount: 2

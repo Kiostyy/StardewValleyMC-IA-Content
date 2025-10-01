@@ -1,0 +1,53 @@
+info:
+  namespace: customfoods
+items:
+  golden_carrot_cake:
+    enabled: true
+    name: "Golden Carrot Cake"
+    lore:
+      - "&7A luxurious cake made with golden carrots."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/golden_carrot_cake
+    consumable:
+      nutrition: 12
+      saturation: 14
+      can_always_eat: true
+    events:
+      eat:
+        potion_effect:
+          type: HASTE
+          amplifier: 0
+          duration: 1200
+
+# Recipe Section
+recipes:
+  crafting_table:
+    golden_carrot_cake_recipe:
+      enabled: true
+      pattern:
+        - CAG
+        - BDF
+        - EEE
+      ingredients:
+        A: customfoods:flour
+        B: customfoods:butter
+        C: customfoods:oven
+        D: GOLDEN_CARROT
+        E: customfoods:milk_cream
+        F: SUGAR
+        G: EGG
+      result:
+        item: customfoods:golden_carrot_cake
+        amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

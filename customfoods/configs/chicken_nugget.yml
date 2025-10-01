@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: "Chicken Nugget"
     lore:
-      - "&7&oCrispy and delicious chicken nuggets."
+      - "&7Crispy and delicious chicken nuggets."
     resource:
       material: APPLE
       generate: true

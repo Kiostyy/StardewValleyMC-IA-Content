@@ -5,7 +5,7 @@ items:
     enabled: true
     name: "Shrimp"
     lore:
-      - "&7&oA small shrimp, perfect for a seafood dish."
+      - "&7A small shrimp, perfect for a seafood dish."
     resource:
       material: APPLE
       generate: true

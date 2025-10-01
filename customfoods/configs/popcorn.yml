@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Popcorn
     lore:
-      - "&7&oA delicious snack made from popped corn."
+      - "&7A delicious snack made from popped corn."
     resource:
       material: APPLE
       generate: true

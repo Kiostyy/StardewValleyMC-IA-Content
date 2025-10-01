@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Cheese Slice
     lore:
-      - "&7&oA thin slice of cheese."
+      - "&7A thin slice of cheese."
     resource:
       material: APPLE
       generate: true

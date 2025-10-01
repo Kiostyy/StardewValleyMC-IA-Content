@@ -5,7 +5,7 @@ items:
       enabled: true
       display_name: "Melon Wine"
       lore:
-        - "&7&oA refreshing drink made from fermented melons."
+        - "&7A refreshing drink made from fermented melons."
       graphics:
         material: APPLE
         texture: "item/melon_wine"

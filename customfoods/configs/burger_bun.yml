@@ -5,7 +5,7 @@ items:
     enabled: true
     name: "Burger Bun"
     lore:
-      - "&7&oA soft round bun for burgers."
+      - "&7A soft round bun for burgers."
     resource:
       material: APPLE
       generate: true

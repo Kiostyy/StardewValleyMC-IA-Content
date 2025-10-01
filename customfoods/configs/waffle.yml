@@ -5,25 +5,22 @@ items:
     enabled: true
     name: "Waffle"
     lore:
-      - "&7&oA square-shaped breakfast treat."
-      - ""
-      - "&5When consumed:"
-      - "&9Night Vision - 5s"
+      - "&7A square-shaped breakfast treat."
     resource:
       material: APPLE
       generate: true
       textures:
         - item/waffle
     consumable:
-      nutrition: 5
-      saturation: 6
+      nutrition: 6
+      saturation: 7
       can_always_eat: true
     events:
-        drink:
-          potion_effect:
-            type: NIGHT_VISION
-            amplifier: 0
-            duration: 100
+      eat:
+        potion_effect:
+          type: NIGHT_VISION
+          amplifier: 0
+          duration: 100
 
 # Recipe Section
 recipes:

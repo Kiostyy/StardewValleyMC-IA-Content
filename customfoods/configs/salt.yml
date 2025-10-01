@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Salt
     lore:
-      - "&7&oPerfect for seasoning your food!"
+      - "&7Perfect for seasoning your food!"
     resource:
       material: PAPER
       generate: true

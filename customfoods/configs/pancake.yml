@@ -1,0 +1,53 @@
+info:
+  namespace: customfoods
+items:
+  pancake:
+    enabled: true
+    name: "Pancake"
+    lore:
+      - "&7A fluffy pancake."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/pancake
+    consumable:
+      nutrition: 6
+      saturation: 7
+      can_always_eat: true
+    events:
+      eat:
+        potion_effect:
+          type: NIGHT_VISION
+          amplifier: 0
+          duration: 100
+
+# Recipe Section
+recipes:
+  crafting_table:
+    pancake_recipe:
+      enabled: true
+      pattern:
+        - CAD
+        - EBX
+        - XXX
+      ingredients:
+        A: customfoods:dough
+        B: customfoods:milk_cream
+        C: customfoods:oven
+        D: SUGAR
+        E: HONEY_BOTTLE
+      result:
+        item: customfoods:pancake
+        amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        replace:
+          HONEY_BOTTLE: GLASS_BOTTLE
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

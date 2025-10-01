@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Onion Ring
     lore:
-      - "&7&oCrispy and delicious onion rings."
+      - "&7Crispy and delicious onion rings."
     resource:
       material: APPLE
       generate: true

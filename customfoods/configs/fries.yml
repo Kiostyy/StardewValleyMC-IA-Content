@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Fries
     lore:
-      - "&7&oWho doesn't love fries?"
+      - "&7Who doesn't love fries?"
     resource:
       material: APPLE
       generate: true

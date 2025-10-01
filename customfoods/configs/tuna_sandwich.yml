@@ -1,0 +1,35 @@
+info:
+  namespace: customfoods
+items:
+  tuna_sandwich:
+    enabled: true
+    name: "Tuna Sandwich"
+    lore:
+      - "&7A delicious tuna sandwich."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/tuna_sandwich
+    consumable:
+      nutrition: 10
+      saturation: 10
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    tuna_sandwich_recipe:
+      enabled: true
+      pattern:
+        - XAX
+        - CBD
+        - XAX
+      ingredients:
+        A: customfoods:white_bread_slice
+        B: COOKED_COD
+        C: customcrops:lettuce
+        D: customfoods:cheese_slice
+      result:
+        item: customfoods:tuna_sandwich
+        amount: 1

@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Scrambled Egg
     lore:
-      - "&7&oA delicious scrambled egg dish."
+      - "&7A delicious scrambled egg dish."
     resource:
       material: APPLE
       generate: true

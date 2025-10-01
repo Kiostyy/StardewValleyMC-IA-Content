@@ -1,0 +1,52 @@
+info:
+  namespace: customfoods
+items:
+  cherry_muffin:
+    enabled: true
+    name: "Cherry Muffin"
+    lore:
+      - "&7A small, round baked good."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/grape_muffin
+    consumable:
+      nutrition: 7
+      saturation: 7
+      can_always_eat: true
+    events:
+      eat:
+        potion_effect:
+          type: RESISTANCE
+          amplifier: 0
+          duration: 200
+
+# Recipe Section
+recipes:
+  crafting_table:
+    cherry_muffin_recipe:
+      enabled: true
+      pattern:
+        - CAD
+        - EBF
+        - XXX
+      ingredients:
+        A: customfoods:dough
+        B: customfoods:butter
+        C: customfoods:oven
+        D: SUGAR
+        E: customfoods:milk_cream
+        F: customcrops:cherry
+      result:
+        item: customfoods:cherry_muffin
+        amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

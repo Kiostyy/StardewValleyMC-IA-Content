@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Onigiri
     lore:
-      - "&7&oA Japanese rice ball, often wrapped in seaweed."
+      - "&7A Japanese rice ball, often wrapped in seaweed."
     resource:
       material: APPLE
       generate: true

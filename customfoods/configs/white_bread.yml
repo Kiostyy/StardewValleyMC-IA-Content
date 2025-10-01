@@ -5,7 +5,7 @@ items:
     enabled: true
     name: "White Bread"
     lore:
-      - "&7&oA soft loaf of white bread."
+      - "&7A soft loaf of white bread."
     resource:
       material: APPLE
       generate: true

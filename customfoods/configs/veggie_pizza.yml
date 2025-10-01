@@ -5,10 +5,7 @@ items:
     enabled: true
     display_name: Veggie Pizza
     lore:
-      - "&7&oA delicious pizza topped with fresh vegetables."
-      - ""
-      - "&5When consumed:"
-      - "&9Health Boost - 10s"
+      - "&7A delicious pizza topped with fresh vegetables."
     resource:
       material: APPLE
       generate: true
@@ -19,11 +16,11 @@ items:
       saturation: 9
       can_always_eat: true
     events:
-        eat:
-          potion_effect:
-            type: HEALTH_BOOST
-            amplifier: 0
-            duration: 200
+      eat:
+        potion_effect:
+          type: HEALTH_BOOST
+          amplifier: 0
+          duration: 200
 
 # Recipe Section
 recipes:

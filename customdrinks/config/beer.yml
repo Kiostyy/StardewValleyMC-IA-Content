@@ -5,7 +5,7 @@ items:
       enabled: true
       display_name: "Beer"
       lore:
-        - "&7&oA popular alcoholic beverage."
+        - "&7A popular alcoholic beverage."
       graphics:
         material: APPLE
         texture: "item/beer"

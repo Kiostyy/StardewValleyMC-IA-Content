@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: Butter
     lore:
-      - "&7&oA creamy dairy product."
+      - "&7A creamy dairy product."
     resource:
       material: APPLE
       generate: true
@@ -16,11 +16,11 @@ items:
       saturation: 1
       can_always_eat: true
     events:
-        drink:
-          potion_effect:
-            type: HUNGER
-            amplifier: 0
-            duration: 240
+      eat:
+        potion_effect:
+          type: HUNGER
+          amplifier: 0
+          duration: 240
 
 # Recipe Section
 recipes:

@@ -5,7 +5,7 @@ items:
     enabled: true
     name: "Crab"
     lore:
-      - "&7&oA delicious crab caught fresh from the ocean."
+      - "&7A delicious crab caught fresh from the ocean."
     resource:
       material: APPLE
       generate: true
