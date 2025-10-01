@@ -5,7 +5,7 @@ items:
     enabled: true
     display_name: "Grinder"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/grinder
@@ -17,7 +17,7 @@ items:
     enabled: true
     display_name: "Knife"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/knife
@@ -29,7 +29,7 @@ items:
     enabled: true
     display_name: "Frying Pan"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/frying_pan
@@ -41,7 +41,7 @@ items:
     enabled: true
     display_name: "Cooking Pot"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/cooking_pot
@@ -53,7 +53,7 @@ items:
     enabled: true
     display_name: "Food Press"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/food_press
@@ -65,7 +65,7 @@ items:
     enabled: true
     display_name: "Cask"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/cask
@@ -77,7 +77,7 @@ items:
     enabled: true
     display_name: "Fryer"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/fryer
@@ -89,7 +89,7 @@ items:
     enabled: true
     display_name: "Oven"
     resource:
-      material: MUSIC_DISC_11
+      material: PAPER
       generate: true
       textures:
         - item/oven
