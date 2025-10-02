@@ -24,7 +24,6 @@ recipes:
       ingredient:
         item: POTION
       machines:
-        - FURNACE
         - SMOKER
       exp: 1
       cook_time: 800

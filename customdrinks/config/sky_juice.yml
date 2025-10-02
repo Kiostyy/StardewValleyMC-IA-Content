@@ -1,0 +1,37 @@
+info:
+  namespace: customdrinks
+items:
+    sky_juice:
+      enabled: true
+      display_name: "Sky Juice"
+      lore:
+        - "&7A refreshing drink made from the essence of the sky."
+      graphics:
+        material: APPLE
+        texture: "item/sky_juice"
+      consumable:
+        nutrition: 1
+        saturation: 4
+        can_always_eat: true
+        sound: entity.generic.drink
+      events:
+        drink:
+          increment_player_stat:
+            name: thirst
+            amount: 3
+          give_item:
+            item: GLASS_BOTTLE
+
+# Recipe Section
+recipes:
+  cooking:
+    sky_juice_recipe:
+      ingredient:
+        item: POTION
+      machines:
+        - FURNACE
+      exp: 1
+      cook_time: 400
+      result:
+        item: customdrinks:sky_juice
+        amount: 1
