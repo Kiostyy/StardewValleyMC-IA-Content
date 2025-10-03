@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  strawberry:
+    enabled: true
+    display_name: Strawberry
+    lore:
+      - "&7&oA sweet red fruit."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/strawberry/strawberry # Link to ItemsAdder/contents/textures/item/strawberry/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

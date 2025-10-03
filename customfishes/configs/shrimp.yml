@@ -19,7 +19,7 @@ items:
 #Loot Table Section
 loots:
   fishing:
-    shrimp:
+    shrimp_loots:
       # biomes:
       #   - WARM_OCEAN
       items:

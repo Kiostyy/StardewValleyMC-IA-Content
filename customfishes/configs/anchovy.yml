@@ -1,30 +1,30 @@
 info:
   namespace: customfishes
 items:
-  clam:
+  anchovy:
     enabled: true
-    name: "Clam"
+    name: "Anchovy"
     lore:
-      - "&7A fresh clam fished from the sea."
+      - "&7Small and tasty fish, great for cooking."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/clam
+        - item/anchovy
     consumable:
-      nutrition: 5
-      saturation: 5
+      nutrition: 2
+      saturation: 2
       can_always_eat: true
 
 #Loot Table Section
 loots:
   fishing:
-    clam_loots:
+    anchovy_loots:
       # biomes:
       #   - WARM_OCEAN
       items:
         item_1:
-          item: customfishes:clam
+          item: customfishes:anchovy
           min_amount: 1
           max_amount: 1
-          chance: 5
+          chance: 8

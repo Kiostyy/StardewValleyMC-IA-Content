@@ -1,30 +1,28 @@
 info:
   namespace: customfishes
 items:
-  clam:
+  tuna:
     enabled: true
-    name: "Clam"
+    name: "Tuna"
     lore:
-      - "&7A fresh clam fished from the sea."
+      - "&7A large and valuable fish, great for cooking."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/clam
+        - item/tuna
     consumable:
-      nutrition: 5
-      saturation: 5
+      nutrition: 6
+      saturation: 6
       can_always_eat: true
 
 #Loot Table Section
 loots:
   fishing:
-    clam_loots:
-      # biomes:
-      #   - WARM_OCEAN
+    tuna_loots:
       items:
         item_1:
-          item: customfishes:clam
+          item: customfishes:tuna
           min_amount: 1
           max_amount: 1
-          chance: 5
+          chance: 3
