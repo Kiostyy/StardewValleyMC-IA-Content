@@ -36,6 +36,27 @@ font_images:
     path: "font/4.png"
     scale_ratio: 9 # Do not change this value
     y_position: 8 # Do not change this value
+  5: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/5.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  6: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/6.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
+  nub: # This will match with the luckperm's {groupname} and {groupname}.png
+    permission_suffix: "ranks"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "font/nub.png"
+    scale_ratio: 9 # Do not change this value
+    y_position: 8 # Do not change this value
   helper: # This will match with the luckperm's {groupname} and {groupname}.png
     permission_suffix: "ranks"
     show_in_gui: true
