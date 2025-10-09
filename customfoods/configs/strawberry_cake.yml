@@ -35,7 +35,7 @@ recipes:
         A: customfoods:flour
         B: customfoods:butter
         C: customfoods:oven
-        D: customcrops:cherry
+        D: customcrops:strawberry
         E: customfoods:milk_cream
         F: SUGAR
         G: EGG
