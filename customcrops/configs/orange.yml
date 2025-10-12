@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  orange:
+    enabled: true
+    display_name: Orange
+    lore:
+      - "&7&oA sweet orange fruit."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/orange/orange # Link to ItemsAdder/contents/textures/item/orange/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

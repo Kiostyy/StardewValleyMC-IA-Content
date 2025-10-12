@@ -23,15 +23,3 @@ items:
             item: GLASS_BOTTLE
 
 # Recipe Section
-recipes:
-  cooking:
-    sky_juice_recipe:
-      ingredient:
-        item: POTION
-      machines:
-        - FURNACE
-      exp: 1
-      cook_time: 400
-      result:
-        item: customdrinks:sky_juice
-        amount: 1

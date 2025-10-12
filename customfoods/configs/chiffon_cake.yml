@@ -1,0 +1,46 @@
+info:
+  namespace: customfoods
+items:
+  chiffon_cake:
+    enabled: true
+    name: "Chiffon Cake"
+    lore:
+      - "&7A light and fluffy chiffon cake."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/chiffon_cake
+    consumable:
+      nutrition: 8
+      saturation: 9
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    chiffon_cake_recipe:
+      enabled: true
+      pattern:
+        - CAG
+        - BXF
+        - EEE
+      ingredients:
+        A: customfoods:flour
+        B: customfoods:butter
+        C: customfoods:oven
+        E: customfoods:milk_cream
+        F: SUGAR
+        G: EGG
+      result:
+        item: customfoods:chiffon_cake
+        amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1

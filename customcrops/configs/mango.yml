@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  mango:
+    enabled: true
+    display_name: Mango
+    lore:
+      - "&7&oA sweet mango fruit."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/mango/mango # Link to ItemsAdder/contents/textures/item/mango/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

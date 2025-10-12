@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  blueberry:
+    enabled: true
+    display_name: Blueberry
+    lore:
+      - "&7&oA sweet blue fruit."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/blueberry/blueberry # Link to ItemsAdder/contents/textures/item/blueberry/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

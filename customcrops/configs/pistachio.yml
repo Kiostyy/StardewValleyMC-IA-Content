@@ -1,0 +1,16 @@
+info:
+  namespace: customcrops
+items:
+  pistachio:
+    enabled: true
+    display_name: Pistachio
+    lore:
+      - "&7&oA luxurious delicate nut."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/pistachio/pistachio # Link to ItemsAdder/contents/textures/item/pistachio/{filename}.png
+    consumable:
+      nutrition: 1
+      saturation: 1

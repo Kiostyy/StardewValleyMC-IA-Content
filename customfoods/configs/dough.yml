@@ -30,7 +30,7 @@ recipes:
       shapeless: true
       ingredients:
         A: customfoods:flour
-        B: POTION
+        B: customdrinks:distilled_water
         C: EGG
       result:
         item: customfoods:dough

@@ -1,0 +1,53 @@
+info:
+  namespace: customfoods
+items:
+  blueberry_cake:
+    enabled: true
+    name: "Blueberry Cake"
+    lore:
+      - "&7A sweet & fruity blueberry cake."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/blueberry_cake
+    consumable:
+      nutrition: 9
+      saturation: 10
+      can_always_eat: true
+    events:
+      eat:
+        potion_effect:
+          type: HEALTH_BOOST
+          amplifier: 0
+          duration: 1800
+
+# Recipe Section
+recipes:
+  crafting_table:
+    blueberry_cake_recipe:
+      enabled: true
+      pattern:
+        - CAG
+        - BDF
+        - EEE
+      ingredients:
+        A: customfoods:flour
+        B: customfoods:butter
+        C: customfoods:oven
+        D: customcrops:blueberry
+        E: customfoods:milk_cream
+        F: SUGAR
+        G: EGG
+      result:
+        item: customfoods:blueberry_cake
+        amount: 1
+      return_items:
+        decrement_durability:
+          oven:
+            item: customfoods:oven
+            amount: 1
+        play_sound:
+          name: customsounds:oven
+          volume: 1
+          pitch: 1
