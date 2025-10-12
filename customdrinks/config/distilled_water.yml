@@ -25,7 +25,7 @@ items:
 # Recipe Section
 recipes:
   cooking:
-    sky_juice_recipe:
+    distilled_water_recipe:
       ingredient:
         item: POTION
       machines:
@@ -35,11 +35,10 @@ recipes:
       result:
         item: customdrinks:distilled_water
         amount: 1
-    sky_juice_recipe_2:
+    distilled_water_recipe_2:
       ingredient:
         item: POTION
       machines:
-        - SMOKER
         - BLAST_FURNACE
       exp: 1
       cook_time: 200
