@@ -23,10 +23,10 @@ recipes:
       enabled: true
       shapeless: true
       ingredients:
-        A: MILK_BUCKET
-        B: customfoods:salt
-        C: customfoods:vinegar
-        D: customfoods:cask
+        M: MILK_BUCKET
+        S: customfoods:salt
+        V: customfoods:vinegar
+        C: customfoods:cask
       result:
         item: customfoods:cheese
         amount: 1

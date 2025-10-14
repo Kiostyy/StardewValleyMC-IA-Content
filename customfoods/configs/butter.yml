@@ -29,8 +29,8 @@ recipes:
       enabled: true
       shapeless: true
       ingredients:
-        A: MILK_BUCKET
-        B: customfoods:salt
+        M: MILK_BUCKET
+        S: customfoods:salt
         C: customfoods:cask
       result:
         item: customfoods:butter
