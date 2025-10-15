@@ -10,7 +10,7 @@ items:
       material: APPLE
       generate: true
       textures:
-        - item/grape_muffin
+        - item/cherry_muffin
     consumable:
       nutrition: 7
       saturation: 7
