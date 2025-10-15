@@ -34,7 +34,7 @@ recipes:
       shapeless: true
       ingredients:
         A: WHEAT
-        B: POTION
+        B: customdrinks:distilled_water
         C: SUGAR
         D: customfoods:cask
       result:

@@ -34,7 +34,7 @@ recipes:
       shapeless: true
       ingredients:
         A: MELON_SLICE
-        B: POTION
+        B: customdrinks:distilled_water
         C: SUGAR
         D: WHEAT
         E: customfoods:cask
