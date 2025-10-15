@@ -21,12 +21,15 @@ recipes:
   crafting_table:
     cheese_recipe:
       enabled: true
-      shapeless: true
+      pattern:
+        - ABC
+        - DXX
+        - XXX
       ingredients:
-        M: MILK_BUCKET
-        S: customfoods:salt
-        V: customfoods:vinegar
-        C: customfoods:cask
+        A: MILK_BUCKET
+        B: customfoods:salt
+        C: customfoods:vinegar
+        D: customfoods:cask
       result:
         item: customfoods:cheese
         amount: 1

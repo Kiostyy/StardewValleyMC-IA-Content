@@ -27,11 +27,14 @@ recipes:
   crafting_table:
     butter_recipe:
       enabled: true
-      shapeless: true
+      pattern:
+        - ABX
+        - DXX
+        - XXX
       ingredients:
-        M: MILK_BUCKET
-        S: customfoods:salt
-        C: customfoods:cask
+        A: MILK_BUCKET
+        B: customfoods:salt
+        D: customfoods:cask
       result:
         item: customfoods:butter
         amount: 1
