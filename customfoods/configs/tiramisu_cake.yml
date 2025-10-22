@@ -29,7 +29,7 @@ recipes:
       enabled: true
       pattern:
         - CAG
-        - BDF
+        - BDD
         - EEE
       ingredients:
         A: customfoods:flour
@@ -37,7 +37,6 @@ recipes:
         C: customfoods:oven
         D: customfoods:chocolate
         E: customfoods:milk_cream
-        F: SUGAR
         G: EGG
       result:
         item: customfoods:tiramisu_cake
