@@ -23,8 +23,8 @@ recipes:
       enabled: true
       pattern:
         - AAA
-        - BDE
-        - XXX
+        - BCD
+        - EXX
       ingredients:
         A: EGG
         B: customfoods:salt
