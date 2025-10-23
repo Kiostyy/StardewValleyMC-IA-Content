@@ -1,16 +1,16 @@
 info:
   namespace: customfoods
 items:
-  nigiri:
+  sake_nigiri:
     enabled: true
-    display_name: Nigiri
+    display_name: Sake Nigiri
     lore:
-      - "&7A Japanese dish consisting of rice and raw fish."
+      - "&7A classic sushi rice topped with fresh salmon."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/nigiri
+        - item/sake_nigiri
     consumable:
       nutrition: 5
       saturation: 5
@@ -19,14 +19,23 @@ items:
 # Recipe Section
 recipes:
   crafting_table:
-    nigiri_recipe:
+    sake_nigiri_recipe:
       enabled: true
       shapeless: true
       ingredients:
         A: customcrops:rice
         B: customfoods:salt
         C: SALMON
-        D: DRIED_KELP
+        D: customfoods:sushi_rolling_mat
       result:
-        item: customfoods:nigiri
+        item: customfoods:sake_nigiri
         amount: 3
+      return_items:
+        decrement_durability:
+          frying_pan:
+            item: customfoods:sushi_rolling_mat
+            amount: 1
+        play_sound:
+          name: customsounds:sushi_rolling_mat
+          volume: 1
+          pitch: 1

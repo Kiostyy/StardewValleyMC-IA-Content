@@ -1,0 +1,45 @@
+info:
+  namespace: customfoods
+items:
+  chinese_omelette:
+    enabled: true
+    display_name: Chinese Omelette
+    lore:
+      - "&7A delicious omelette filled with fresh vegetables."
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - item/chinese_omelette
+    consumable:
+      nutrition: 6
+      saturation: 6
+      can_always_eat: true
+
+# Recipe Section
+recipes:
+  crafting_table:
+    chinese_omelette_recipe:
+      enabled: true
+      pattern:
+        - AAA
+        - BDE
+        - XXX
+      ingredients:
+        A: EGG
+        B: customfoods:salt
+        C: customcrops:lettuce
+        D: COOKED_CHICKEN
+        E: customfoods:frying_pan
+      result:
+        item: customfoods:chinese_omelette
+        amount: 2
+      return_items:
+        decrement_durability:
+          frying_pan:
+            item: customfoods:frying_pan
+            amount: 1
+        play_sound:
+          name: customsounds:frying_pan
+          volume: 1
+          pitch: 1

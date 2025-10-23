@@ -1,34 +1,35 @@
 info:
   namespace: customfoods
 items:
-  onigiri:
+  ikura_maki:
     enabled: true
-    display_name: Onigiri
+    display_name: Ikura Maki
     lore:
-      - "&7A Japanese rice ball, often wrapped in seaweed."
+      - "&7A delicious sushi roll filled with fresh salmon roe."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/onigiri
+        - item/ikura_maki
     consumable:
-      nutrition: 5
-      saturation: 5
+      nutrition: 6
+      saturation: 6
       can_always_eat: true
 
 # Recipe Section
 recipes:
   crafting_table:
-    onigiri_recipe:
+    ikura_maki_recipe:
       enabled: true
       shapeless: true
       ingredients:
         A: customcrops:rice
         B: customfoods:salt
         C: DRIED_KELP
-        D: customfoods:sushi_rolling_mat
+        D: customfishes:roe
+        E: customfoods:sushi_rolling_mat
       result:
-        item: customfoods:onigiri
+        item: customfoods:ikura_maki
         amount: 1
       return_items:
         decrement_durability:

@@ -11,6 +11,7 @@ minecraft_lang_overwrite:
       sound.oven: "Oven Sound"
       sound.fryer: "Fryer Sound"
       sound.food_press: "Food Press Sound"
+      sound.sushi_rolling_mat: "Sushi Rolling Mat Sound"
     languages:
     - ALL
 sounds:
@@ -46,3 +47,7 @@ sounds:
     path: food_press
     settings:
       subtitle: sound.food_press
+  sushi_rolling_mat:
+    path: sushi_rolling_mat
+    settings:
+      subtitle: sound.sushi_rolling_mat

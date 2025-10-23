@@ -97,6 +97,18 @@ items:
       max_durability: 100
       disappear_when_broken: true
 
+  sushi_rolling_mat:
+    enabled: true
+    display_name: "Sushi Rolling Mat"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - item/sushi_rolling_mat
+    durability:
+      max_durability: 100
+      disappear_when_broken: true
+
 # Recipe Section
 recipes:
   crafting_table:
@@ -195,4 +207,16 @@ recipes:
         C: REDSTONE_BLOCK
       result:
         item: customfoods:oven
+        amount: 1
+    sushi_rolling_mat_recipes:
+      enabled: true
+      pattern:
+        - AAA
+        - BAB
+        - AAA
+      ingredients:
+        A: BAMBOO
+        B: STRING
+      result:
+        item: customfoods:sushi_rolling_mat
         amount: 1

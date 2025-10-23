@@ -1,34 +1,35 @@
 info:
   namespace: customfoods
 items:
-  onigiri:
+  kani_maki:
     enabled: true
-    display_name: Onigiri
+    display_name: Kani Maki
     lore:
-      - "&7A Japanese rice ball, often wrapped in seaweed."
+      - "&7A delicious sushi roll filled with fresh crab."
     resource:
       material: APPLE
       generate: true
       textures:
-        - item/onigiri
+        - item/kani_maki
     consumable:
-      nutrition: 5
-      saturation: 5
+      nutrition: 6
+      saturation: 6
       can_always_eat: true
 
 # Recipe Section
 recipes:
   crafting_table:
-    onigiri_recipe:
+    kani_maki_recipe:
       enabled: true
       shapeless: true
       ingredients:
         A: customcrops:rice
         B: customfoods:salt
         C: DRIED_KELP
-        D: customfoods:sushi_rolling_mat
+        D: customfishes:crab_legs
+        E: customfoods:sushi_rolling_mat
       result:
-        item: customfoods:onigiri
+        item: customfoods:kani_maki
         amount: 1
       return_items:
         decrement_durability:
