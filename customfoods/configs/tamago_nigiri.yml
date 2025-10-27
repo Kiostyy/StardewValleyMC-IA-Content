@@ -19,7 +19,7 @@ items:
 # Recipe Section
 recipes:
   crafting_table:
-    kani_maki_recipe:
+    tamago_nigiri_recipe:
       enabled: true
       shapeless: true
       ingredients:
@@ -29,7 +29,7 @@ recipes:
         D: EGG
         E: customfoods:sushi_rolling_mat
       result:
-        item: customfoods:kani_maki
+        item: customfoods:tamago_nigiri
         amount: 1
       return_items:
         decrement_durability:
